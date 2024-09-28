@@ -8,7 +8,17 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"; // Ensure proper path for components
 import Logo from "../assets/El-neema.svg"; // Replace with your actual logo path
-
+import DonationBtn from "./donationbtn"; // Replace with your actual logo path
+import { TbMenuDeep } from "react-icons/tb";
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+  } from "@/components/ui/sheet"
+  
 const Navbar = () => {
   const menuItems = [
     {
@@ -29,11 +39,11 @@ const Navbar = () => {
     },
     { name: "Contact Us", link: "#" },
     { name: "Support Us", link: "#" },
-    { name: "Donate", link: "#", isButton: true },
+    // { name: "Donate", link: "#", isButton: true },
   ];
 
   return (
-    <nav className="w-full shadow-md">
+    <nav className="w-full shadow-md font-Manrope px-5 lg:px-">
       <div className="flex items-center justify-between py- lg:px-20 px-">
         {/* Logo */}
         <div>
@@ -41,7 +51,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <div className="flex">
+        <div className="flex lg:flex hidden">
           {menuItems.map((item, index) => (
             <NavigationMenu key={index}
             className=""
@@ -80,6 +90,24 @@ const Navbar = () => {
               </NavigationMenuList>
             </NavigationMenu>
           ))}
+        </div>
+        <div className="lg:block hidden">
+            <DonationBtn />
+        </div>
+        <div className="lg:hidden block text-2xl">
+        <Sheet>
+  <SheetTrigger><TbMenuDeep /></SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+
         </div>
       </div>
     </nav>

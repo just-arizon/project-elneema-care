@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        Inter: ['Inter', 'sans-serif'],
+        Manrope: ['Manrope', 'san-serif'],
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
