@@ -4,6 +4,7 @@ import Landing from "../sections/landing";
 import Testimonials from "../sections/testimonials";
 import Explore from "../sections/explore";
 import About from "../sections/about";
+import Framework from "../sections/framework";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     className="w-full font-Manrope "
     >
       <Landing />
+      <Framework />
       <About />
       <Explore />
       <Testimonials />

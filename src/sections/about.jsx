@@ -27,11 +27,12 @@ const initiatives = [
   { name: "Pad a Yarinya (P.A.Y)" },
   { name: "Widows Smile at Christmas (W.S.C)" },
   { name: "Pad Scholarship Scheme (P.S.S)" },
+  { name: "El Neema Cares period guide" },
 ];
 
 const AboutUs = () => {
   return (
-    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:px-24 py-20 gap-5 ">
+    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:px-24 px-5 py-20 gap-5 ">
       <div className="grid gap-5 bg- lg:w-10/12">
         <div>
           <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
@@ -47,7 +48,7 @@ const AboutUs = () => {
             className="lg:w-full"
           >
             <motion.h2
-              className="lg:text-4xl text-3xl font-semibold lg:text-start text-center font-Inter"
+              className="lg:text-4xl text-2xl font-semibold lg:text-start text-center font-Inter"
               variants={textVariant}
               custom={0}
             >
@@ -55,36 +56,28 @@ const AboutUs = () => {
             </motion.h2>
           </motion.div>
           <div className="flex lg:justify-start justify-center">
-            <div className="w-12 h-1 lg:mt-1 bg-orange-400"></div>
+            <div className="w-12 h-1 lg:mt-1 bg-orange-400 mb-3"></div>
           </div>
 
-          <p className="text-center lg:text-start lg:mb-10 font-Montserrat">
+          <p className="text-center lg:text-start lg:mb-10 pt- font-Manrope">
             El Neema cares initiative is on a mission to reduce period stigma
             and curb period poverty in Africa one girl child at a time through
             our 4 existing initiatives below.
           </p>
 
-          <div className="w-full  overflow-auto">
-            <Swiper
-              spaceBetween={10}
-              centeredSlides={true}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              
-              modules={[Autoplay, Pagination]}
-              loop={true}
-              className="mySwiper"
+          <div className="w-full ">
+            <ul
+            
+              className="flex flex-col  gap-4"
             >
               {initiatives.map((initiative, index) => (
-                <SwiperSlide key={index} className="bg-blue-400">
-                  <Card className="w-full bg-gray-200 py-2 px-4 font-semibold text-start shadow-none">
+                <li key={index} className="">
+                  <Card className="w-full bg-gray-200 py-2 px-4 font-semibold text-start shadow-md">
                     {initiative.name}
                   </Card>
-                </SwiperSlide>
+                </li>
               ))}
-            </Swiper>
+            </ul>
           </div>
         </div>
         <div className="my-5">
@@ -93,11 +86,11 @@ const AboutUs = () => {
       </div>
 
       <div className="bg- grid lg:grid-cols-2 grid-cols-1 gap-5">
-        <div className="grid gap-5">
-          <div className="lg:w-full  grid gap-7 mt-10">
+        <div className="grid gap-0">
+          <div className="lg:w-full  grid gap-2 mt-10">
             <Image src={Image1} className="lg:h-auto rounded-xl" />
           </div>
-          <div className="bg-orange-400 w-full h-44 rounded-xl grid p-10 lg:p-5 gap-4 text-white">
+          <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white">
             <div className="flex items-center text-5xl">
               <SlTrophy />
             </div>
