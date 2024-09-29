@@ -77,12 +77,28 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+        pulseBorder: {
+          '0%': {
+            boxShadow: '0 0 0 0 rgba(255, 255, 255, 0.5)', // Initial box shadow
+          },
+          '50%': {
+            boxShadow: '0 0 0 10px rgba(255, 255, 255, 0)', // Expanded box shadow
+          },
+          '70%': {
+            boxShadow: '0 0 0 20px rgba(255, 255, 255, 0)', // Further expansion
+          },
+          '100%': {
+            boxShadow: '0 0 0 0 rgba(255, 255, 255, 0)', // Reset box shadow
+          },
+        },
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
-  		}
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+        pulseBorder: 'pulseBorder 2s infinite', // Applying animation to pulseBorder
+  		},
+
   	}
   },
   plugins: [require("tailwindcss-animate"), nextui()],
