@@ -30,7 +30,7 @@ const framework = () => {
         },
     ]
   return (
-    <section className="grid lg:grid-cols-1 md:grid-cols-2  lg:gap-10 lg:w-full lg:my-32">
+    <section className="grid lg:grid-cols-1 md:grid-cols-1  lg:gap-10 lg:w-full lg:my-32">
       
         <div className="grid lg:gap-1 gap-8 my-12">
         <motion.div

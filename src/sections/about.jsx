@@ -32,7 +32,7 @@ const initiatives = [
 
 const AboutUs = () => {
   return (
-    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:px-24 px-5 py-20 gap-5 ">
+    <section className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:px-24 px-5 py-20 gap-5 ">
       <div className="grid gap-5 bg- lg:w-10/12">
         <div>
           <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
@@ -40,6 +40,7 @@ const AboutUs = () => {
           </h1>
         </div>
         <div className="grid lg:gap-1 gap-8">
+
           <motion.div
             initial="hidden"
             animate="visible"
@@ -55,6 +56,7 @@ const AboutUs = () => {
               We have impacted 8000 kids across different states in Nigeria
             </motion.h2>
           </motion.div>
+
           <div className="flex lg:justify-start justify-center">
             <div className="w-12 h-1 lg:mt-1 bg-orange-400 mb-3"></div>
           </div>
@@ -65,7 +67,9 @@ const AboutUs = () => {
             our 4 existing initiatives below.
           </p>
 
-          <div className="w-full ">
+         
+        </div>
+        <div className="w-full ">
             <ul
             
               className="flex flex-col  gap-4"
@@ -79,18 +83,17 @@ const AboutUs = () => {
               ))}
             </ul>
           </div>
-        </div>
         <div className="my-5">
           <Button className="text-white bg-orange-400">Read More</Button>
         </div>
       </div>
 
-      <div className="bg- grid lg:grid-cols-2 grid-cols-1 gap-5">
-        <div className="grid gap-0">
-          <div className="lg:w-full  grid gap-2 mt-10">
-            <Image src={Image1} className="lg:h-auto rounded-xl" />
+      <div className="bg- grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
+        <div className="grid gap-5">
+          <div className="lg:w-full h-64  grid gap-2 mt-10">
+            <Image src={Image1} className="lg:h- rounded-xl" />
           </div>
-          <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white">
+          <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white lg:block md:block hidden">
             <div className="flex items-center text-5xl">
               <SlTrophy />
             </div>
@@ -101,11 +104,21 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="lg:w-full  relative">
+        <div className="lg:w-full grid gap-5 relative">
           <Image src={Image2} className="h-auto rounded-xl" />
+
+          <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white lg:hidden md:hidden block">
+            <div className="flex items-center text-5xl">
+              <SlTrophy />
+            </div>
+            <div className="font-extrabold">
+              <p className="text-2xl">1</p>
+              <p className="text-xl">YEAR+ OF LOVE</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
