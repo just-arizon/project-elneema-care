@@ -36,10 +36,10 @@ const textVariant = {
   }),
 };
   return (
-    <section className="bg-blue-400 relative">
+    <section className="bg-blue- relative">
 
 
-      <div className="h-[550px] relative">
+      <div className="h-svh max-h-[550px] relative">
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -63,7 +63,7 @@ const textVariant = {
           filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
           zIndex: -1,
          }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-gray-900 opacity-70"></div></SwiperSlide>
+        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
         <SwiperSlide 
         className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
         style={{ backgroundImage: `url(${LandingImg2})`,
@@ -73,7 +73,7 @@ const textVariant = {
           filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
           zIndex: -1,
          }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-gray-900 opacity-70"></div></SwiperSlide>
+        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
         <SwiperSlide 
         className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
         style={{ backgroundImage: `url(${LandingImg3})`,
@@ -83,7 +83,7 @@ const textVariant = {
           filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
           zIndex: -1,
          }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-gray-900 opacity-70"></div></SwiperSlide>
+        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
        
       </Swiper>
  
