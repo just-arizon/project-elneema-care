@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import Landing from "../sections/landing";
 import Testimonials from "../sections/testimonials";
 import Explore from "../sections/explore";
+import About from "../sections/about";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
     className="w-full font-Manrope "
     >
       <Landing />
+      <About />
       <Explore />
       <Testimonials />
     </motion.div>

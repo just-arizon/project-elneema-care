@@ -82,7 +82,7 @@ const Explore = () => {
           </motion.h2>
         </motion.div>
         <div className="flex lg:justify-center justify-center">
-          <div className="w-12 h-1 lg:mt-2 bg-orange-400"></div>
+          <div className="w-12 h-1 lg:mt-1 bg-orange-400"></div>
         </div>
 
         <div className="w-full flex justify-center lg:py-10 px-5">

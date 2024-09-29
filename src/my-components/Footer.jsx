@@ -39,8 +39,9 @@ const Footer = () => {
           filter: 'brightness(.4) contrast(1.1)', // Adjust these values as needed
           zIndex: -1,
         }}
-      />
-      <div className='flex flex-col py-12 relative'>
+      >
+        </div>
+      <div className='flex flex-col py-12 relative bg-gray-900'>
         <div className="lg:flex justify-between container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="footer-logo flex flex-col justify-center border-b-2 lg:border-none border-b-[#fefefe] border-opacity-30 pb-7">
             <img src={Logo} alt="Logo" className="w-32 py-5" />
@@ -89,7 +90,7 @@ const Footer = () => {
         </div>
 
         <div className="text-white lg:mt-20 mt-15 px-10 justify-center">
-          <h4 className='lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center'>© {currentYear} Mental Health. All rights reserved</h4>
+          <h4 className='lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center'>© {currentYear} El-Neema Care Initiative. All rights reserved</h4>
         </div>
       </div>
     </div>
