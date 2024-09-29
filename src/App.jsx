@@ -1,6 +1,7 @@
 import React, { useState, Suspense } from "react";
 // import { Button } from "@/components/ui/button";
 import Navbar from "./my-components/Navbar";
+import Footer from "./my-components/Footer";
 import Info from "./my-components/Info";
 import ScrollToTop from './my-components/scrollup';
 
@@ -150,7 +151,7 @@ const Root = () => {
       <div className="">
         <RouterProvider router={router} />
       </div>
-      {/* <Footer /> */}
+      <Footer />
       <ScrollToTop />
     </div>
   );

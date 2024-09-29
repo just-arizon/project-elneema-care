@@ -27,8 +27,11 @@ import {
 } from "@/components/ui/accordion";
 import { Image } from "@nextui-org/react";
 import { Link } from "@nextui-org/react";
+import {
+    Navbar
+  } from "@nextui-org/navbar";
 
-const Navbar = () => {
+const navBar = () => {
   const menuItems = [
     {
       name: "Charity",
@@ -52,8 +55,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full shadow-md font-Manrope px-5 lg:px-20">
-      <div className="flex items-center justify-between py-4">
+    <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
+      <div className="w-full flex items-center justify-between py-4">
         <Link href="/">
           <Image src={Logo} alt="Logo" className="cursor-pointer h-12 w-16" />
         </Link>
@@ -144,8 +147,8 @@ const Navbar = () => {
           </Sheet>
         </div>
       </div>
-    </nav>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default navBar;

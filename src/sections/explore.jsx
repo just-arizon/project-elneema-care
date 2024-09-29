@@ -74,7 +74,7 @@ const Explore = () => {
           className="lg:w-full"
         >
           <motion.h2
-            className="lg:text-4xl text-3xl font-semibold lg:text-center text-center"
+            className="lg:text-4xl text-2xl font-semibold lg:text-center text-center font-Inter"
             variants={textVariant}
             custom={0}
           >

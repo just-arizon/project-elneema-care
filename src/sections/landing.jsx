@@ -97,7 +97,7 @@ const textVariant = {
             animate="visible"
             exit="hidden"
             transition={{ staggerChildren: 0.5 }} // Staggering the child elements
-            className="text-white lg:text-7xl md:text-5xl text-4xl  font-bold lg:text-start text-center lg:w-4/5 md:w-full font-Inter"
+            className="text-white lg:text-7xl md:text-5xl text-4xl  font-semibold lg:text-start text-center lg:w-4/5 md:w-full font-Inter"
           >
             <motion.div
               variants={textVariant}
