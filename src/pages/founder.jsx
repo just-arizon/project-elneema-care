@@ -30,13 +30,13 @@ const textVariant = {
 
 const founder = () => {
   return (
-    <section className="lg:px-20 px-5 py-16">
+    <section className="lg:px-20 px-5 lg:py-16 py-7">
       <motion.div
           initial="hidden"
           animate="visible"
           exit="hidden"
           transition={{ staggerChildren: 0.5 }} // Staggering the child elements
-          className="lg:w-full py-5"
+          className="lg:w-full lg:py-5 py-3"
         >
           <motion.h2
             className="lg:text-4xl text-2xl font-bold lg:text-center text-center font-Inter"
@@ -88,7 +88,7 @@ const founder = () => {
           </span>
          
           </div>
-          <Card className="font-Inter leading-7 p-12 bg-gray-100 shadow-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque! Molestias velit cumque mollitia recusandae eligendi ad quo rem cum aliquam voluptatum facilis quas quis asperiores earum non veritatis magni quod aut id fuga, minus, accusantium numquam hic! Et minima molestiae delectus dolorum non doloremque, illo modi atque dolores, odit tempore, autem esse eos. Facilis cum consectetur delectus, alias obcaecati cupiditate eos molestiae reiciendis dolor consequatur perspiciatis molestias dolorem minima inventore amet, fugit vero, suscipit nihil quibusdam ullam qui quisquam. Dolorum asperiores ad dolorem ducimus rem ut aspernatur saepe odio numquam sequi vel ipsam repudiandae ab obcaecati cupiditate sint explicabo minus ipsa dignissimos aut in aliquid, eligendi cum autem. Magni ipsa repellat eum veniam, inventore doloribus adipisci expedita laboriosam odit, nam quidem rerum nulla quod optio molestiae exercitationem provident deleniti est tenetur at error laborum ad. Itaque necessitatibus earum aperiam consectetur fugiat voluptates saepe ratione aliquam enim quia, a minus fugit nostrum qui sit officia repudiandae eaque et. Molestiae, tempora. Eveniet sunt ipsum aliquam numquam vitae magnam sint maxime, exercitationem asperiores voluptas, accusantium mollitia! Exercitationem, ullam. Vero, quis deleniti omnis cum earum commodi molestiae! Animi, pariatur, sapiente tempore enim fugit commodi eligendi alias repellendus eum blanditiis quod porro omnis rerum!</Card>
+          <Card className="font-Manrope leading-7 lg:p-12 p-9 bg-gray-100 shadow-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque! Molestias velit cumque mollitia recusandae eligendi ad quo rem cum aliquam voluptatum facilis quas quis asperiores earum non veritatis magni quod aut id fuga, minus, accusantium numquam hic! Et minima molestiae delectus dolorum non doloremque, illo modi atque dolores, odit tempore, autem esse eos. Facilis cum consectetur delectus, alias obcaecati cupiditate eos molestiae reiciendis dolor consequatur perspiciatis molestias dolorem minima inventore amet, fugit vero, suscipit nihil quibusdam ullam qui quisquam. Dolorum asperiores ad dolorem ducimus rem ut aspernatur saepe odio numquam sequi vel ipsam repudiandae ab obcaecati cupiditate sint explicabo minus ipsa dignissimos aut in aliquid, eligendi cum autem. Magni ipsa repellat eum veniam, inventore doloribus adipisci expedita laboriosam odit, nam quidem rerum nulla quod optio molestiae exercitationem provident deleniti est tenetur at error laborum ad. Itaque necessitatibus earum aperiam consectetur fugiat voluptates saepe ratione aliquam enim quia, a minus fugit nostrum qui sit officia repudiandae eaque et. Molestiae, tempora. Eveniet sunt ipsum aliquam numquam vitae magnam sint maxime, exercitationem asperiores voluptas, accusantium mollitia! Exercitationem, ullam. Vero, quis deleniti omnis cum earum commodi molestiae! Animi, pariatur, sapiente tempore enim fugit commodi eligendi alias repellendus eum blanditiis quod porro omnis rerum!</Card>
       </div>
     </section>
   );

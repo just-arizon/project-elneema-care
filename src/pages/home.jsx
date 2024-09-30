@@ -5,6 +5,7 @@ import Testimonials from "../sections/testimonials";
 import Explore from "../sections/explore";
 import About from "../sections/about";
 import Framework from "../sections/framework";
+import Values from "../sections/values";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     >
       <Landing />
       <Framework />
+      <Values />
       <About />
       <Explore />
       <Testimonials />

@@ -56,7 +56,9 @@ const textVariant = {
       >
         <SwiperSlide 
         className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
-        style={{ backgroundImage: `url(${LandingImg1})`,
+        style={{ backgroundImage: `
+          
+          url(${LandingImg1})`,
           
           backgroundSize: 'cover',
           backgroundPosition: 'center',
