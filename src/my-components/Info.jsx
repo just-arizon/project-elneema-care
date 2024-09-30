@@ -4,7 +4,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 const info = () => {
   return (
-    <div className='bg-orange-700 w-full py-3 text-white text-center gap-2 flex justify-between px-20 lg:flex hidden font-Manrope'>
+    <div className='bg-orange-900 w-full py-3 text-white text-center gap-2 flex justify-between px-20 lg:flex hidden font-Manrope'>
       <div className="flex gap-5">
         <small className="flex gap-1">
           <div className='flex items-center'><FaPhoneFlip /></div>

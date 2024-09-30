@@ -120,9 +120,9 @@ const navBar = () => {
                 </SheetTitle>
                 <SheetDescription>
                   {menuItems.map((item, index) => (
-                    <Accordion key={index} type="single" collapsible>
+                    <Accordion key={index} type="single" collapsible  defaultValue={item.subMenu ? `item-${index}` : ""}>
                       {item.subMenu ? (
-                        <AccordionItem value={`item-${index}`} className="font-Manrope">
+                        <AccordionItem value={`item-${index}`} className="font-Manrope" >
                           <AccordionTrigger>{item.name}</AccordionTrigger>
                           <AccordionContent>
                             <ul className="flex flex-col">

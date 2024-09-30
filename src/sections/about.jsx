@@ -90,7 +90,7 @@ const AboutUs = () => {
 
       <div className="bg- grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
         <div className="grid gap-5">
-          <div className="lg:w-full h-64  grid gap-2 mt-10">
+          <div className="lg:w-full lg:h-64  grid gap-2 mt-10">
             <Image src={Image1} className="lg:h- rounded-xl" />
           </div>
           <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white lg:block md:block hidden">
