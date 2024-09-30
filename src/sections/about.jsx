@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Button, Card } from "@nextui-org/react";
+import { Image, Button, Card, Link } from "@nextui-org/react";
 import Image1 from "../assets/about1.jpg";
 import Image2 from "../assets/about2.jpg";
 import { motion } from "framer-motion";
@@ -84,7 +84,9 @@ const AboutUs = () => {
             </ul>
           </div>
         <div className="my-5">
-          <Button className="text-white bg-orange-400">Read More</Button>
+          <Link href="/blog">
+          <Button to="" className="text-white bg-orange-400">Read More</Button>
+          </Link>
         </div>
       </div>
 

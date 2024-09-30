@@ -27,6 +27,7 @@ const Contact = React.lazy(() => import('./pages/contactUs'));
 const Founder = React.lazy(() => import('./pages/founder'));
 const TeamMembers = React.lazy(() => import('./pages/ourTeam'));
 const Support = React.lazy(() => import('./pages/supportUs'));
+const Blog = React.lazy(() => import('./pages/blog'));  
 const Scholarship = React.lazy(() => import('./pages/padScholarship'));
 const WidowSmile = React.lazy(() => import('./pages/widowSmile'));
 const Error = React.lazy(() => import('./pages/errorPage'));
@@ -87,6 +88,14 @@ const Root = () => {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <Contact />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="/blog" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <Blog />
               </Suspense>
             } 
           />
