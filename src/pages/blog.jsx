@@ -18,7 +18,7 @@ const blog = () => {
           className="grid-layout bg-cover bg-center lg:w-full w-full h-80 "
           style={{
             backgroundImage: `
-              linear-gradient(to bottom right, rgba(0, 0, 0, .3), rgba(255, 165, 0, 0.3) 80%),
+           
               url(${BlogImg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",

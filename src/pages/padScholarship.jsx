@@ -45,7 +45,7 @@ const padScholarship = () => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage href="/blog">Blog</BreadcrumbPage>
+              <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
