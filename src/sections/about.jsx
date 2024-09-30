@@ -36,7 +36,7 @@ const AboutUs = () => {
       <div className="grid gap-5 bg- lg:w-10/12">
         <div>
           <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
-            About Us
+            Charity
           </h1>
         </div>
         <div className="grid lg:gap-1 gap-8">

@@ -42,7 +42,7 @@ const Footer = () => {
       >
         </div>
       <div className='flex flex-col py-12 relative bg-orange-900'>
-        <div className="lg:flex justify-between container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="lg:flex justify-between container mx- px-4 sm:px-6 lg:px-8">
           <div className="footer-logo flex flex-col justify-center border-b-2 lg:border-none border-b-[#fefefe] border-opacity-30 pb-7">
             <img src={Logo} alt="Logo" className="w-32 py-5" />
             <div className="footer-nav_links grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
