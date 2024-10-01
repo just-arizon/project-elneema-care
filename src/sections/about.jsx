@@ -53,7 +53,7 @@ const AboutUs = () => {
               variants={textVariant}
               custom={0}
             >
-              We have impacted 8500 girls across different states in Nigeria
+              We have impacted 8500 girls across 11 states in Nigeria
             </motion.h2>
           </motion.div>
 
@@ -100,8 +100,8 @@ const AboutUs = () => {
               <SlTrophy />
             </div>
             <div className="font-extrabold">
-              <p className="text-2xl">1</p>
-              <p className="text-xl">YEAR+ OF LOVE</p>
+              <p className="text-2xl">5</p>
+              <p className="text-xl">YEAR+ OF PADDING THE GIRL CHILD</p>
             </div>
           </div>
         </div>

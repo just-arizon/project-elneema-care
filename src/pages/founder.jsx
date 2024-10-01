@@ -87,7 +87,7 @@ const founder = () => {
         </div>
         <Card className="font-Manrope leading-7 lg:p-12 p-4  shadow-md">
        
-          <p className="leading-8 my-2">
+          <p className=" my-2">
             During my National Youth Service Corp in 2019, I was posted to a
             rural community (Babban Saura) in Kaduna State, where young girls
             didn’t have adequate menstrual knowledge and also lack access to
@@ -100,7 +100,7 @@ const founder = () => {
             for the young girls in that community? That pain in my heart gave birth to the Initiative we have today which we are now celebrating its 5 years in existence. <span className="font-semibold">“THE PAD A YARINYA”</span> initiative, Yarinya being the term for the girl child in Hausa language.  Although it has now come under the umbrella of the NGO, El Neema Cares Initiative, it is an initiative on its own. The initiative popularly known as P.A.Y, focuses on visiting schools and communities and sensitizing the girl child and gifting them with menstrual hygiene products. 
             
           </p>
-          <p className="leading-8 my-2">
+          <p className=" my-2">
           In November, 2023, we launched a booklet <span className="inline font-semibold">‘’ NEEMA’S MENSTRUAL BOOKLET’’</span> a not to be sold booklet for school age girls and out of school girls to help enlighten them on the basics of menstruation. This initiative that started in the Northern part of Nigeria is fast growing and spreading to other parts of the country seeing that not only girls in the North need this knowledge and products. 
           </p>
           <p className="leading-8 my-2">

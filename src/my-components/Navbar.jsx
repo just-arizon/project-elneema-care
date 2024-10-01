@@ -47,7 +47,7 @@ const navBar = () => {
         { name: "Founder", link: "/founder" },
         { name: "About Us", link: "/about" },
         { name: "Our Team", link: "/our-team" },
-        { name: "Board Members", link: "/board-members" },
+        { name: "Volunteers", link: "/volunteers" },
       ],
     },
     { name: "Contact Us", link: "/contact" },

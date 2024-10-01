@@ -55,6 +55,11 @@ const padYarinya = () => {
           </BreadcrumbList>
         </Breadcrumb>
       </div>
+
+      <div className="font-medium font-Manrope mx-5">
+        <p className='py-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem reiciendis ex aut, molestias dolorem molestiae quos aperiam, magnam culpa harum magni similique repudiandae dolor, nemo porro officiis dignissimos provident reprehenderit eum? Odit reiciendis ea eius unde, a sequi debitis consequuntur ipsam ipsum, nam, magnam aperiam voluptatibus beatae fugit tenetur minima. Nobis enim distinctio sequi adipisci quo iste officiis laboriosam eum laudantium culpa laborum explicabo aliquam suscipit soluta ducimus deserunt vel blanditiis sapiente id, repudiandae harum omnis? Natus esse temporibus ducimus harum facere. Molestias, labore numquam expedita blanditiis aliquid iure. Ut minus mollitia asperiores tempore possimus! Eos sequi totam enim optio.</p>
+        <p className='py-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem reiciendis ex aut, molestias dolorem molestiae quos aperiam, magnam culpa harum magni similique repudiandae dolor, nemo porro officiis dignissimos provident reprehenderit eum? Odit reiciendis ea eius unde, a sequi debitis consequuntur ipsam ipsum, nam, magnam aperiam voluptatibus beatae fugit tenetur minima. Nobis enim distinctio sequi adipisci quo iste officiis laboriosam eum laudantium culpa laborum explicabo aliquam suscipit soluta ducimus deserunt vel blanditiis sapiente id, repudiandae harum omnis? Natus esse temporibus ducimus harum facere. Molestias, labore numquam expedita blanditiis aliquid iure. Ut minus mollitia asperiores tempore possimus! Eos sequi totam enim optio.</p>
+      </div>
     </div>
   )
 }
