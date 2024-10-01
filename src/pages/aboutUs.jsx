@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import AboutImg from "../assets/about-page.jpg";
 import image1 from "../assets/GalleryImg-1.jpg";
 import image2 from "../assets/GalleryImg-2.jpg";
@@ -8,8 +9,7 @@ import image5 from "../assets/GalleryImg-5.jpg";
 import image6 from "../assets/GalleryImg-6.jpg";
 import image7 from "../assets/GalleryImg-7.jpg";
 import image8 from "../assets/GalleryImg-8.jpg";
-import { Image } from "@nextui-org/react";
-
+import { Image, Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import {
   Breadcrumb,
@@ -19,6 +19,13 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../sections/styles.css";
+
+const galleryImages = [image1, image7, image3, AboutImg, image8, image6, image2];
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -33,7 +40,19 @@ const textVariant = {
   }),
 };
 
-const aboutUs = () => {
+const AboutUs = () => {
+  const [isOpen, setIsOpen] = useState(false); // Modal state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track which image is opened
+
+  const openImagePreview = (index) => {
+    setCurrentImageIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <motion.div className="relative">
       <motion.div className="relative">
@@ -134,8 +153,10 @@ const aboutUs = () => {
           >
             <motion.h2
               className="lg:text-4xl text-2xl font-bold lg:text-center text-center font-Inter"
-              variants={textVariant}
-              custom={0}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
             >
               Photo Gallery
             </motion.h2>
@@ -143,76 +164,65 @@ const aboutUs = () => {
           <div className="flex lg:justify-center justify-center">
             <div className="w-12 h-1 lg:mt-2 bg-orange-400"></div>
           </div>
-
         </div>
 
+        {/* Gallery grid */}
         <div className="grid grid-cols-4 gap-4 p-4 lg:px-20">
-          {/* <!-- Large Image (2x2) --> */}
-          <div className="col-span-2 row-span-2 bg-gray-">
-            <Image
-              src={image1}
-              alt="Gallery Image 1"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Standard Image --> */}
-          <div className="col-span-1 row-span-1 my-10 bg-blue-">
-            <Image
-              src={image7}
-              alt="Gallery Image 2"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Standard Image --> */}
-          <div className="col-span-1 row-span-1 bg-">
-            <Image
-              src={image3}
-              alt="Gallery Image 3"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Wide Image (2x1) --> */}
-          <div className="col-span-2 row-span-1 bg-orange-">
-            <Image
-              src={AboutImg}
-              alt="Gallery Image 4"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Tall Image (1x2) --> */}
-          <div className="col-span-1 row-span-2 bg-pink-">
-            <Image
-              src={image8}
-              alt="Gallery Image 5"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Standard Image --> */}
-          <div className="col-span-1 row-span-1 bg-purple-">
-            <Image
-              src={image6}
-              alt="Gallery Image 6"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          {/* <!-- Standard Image --> */}
-          <div className="col-span-1 row-span-1 bg-yellow-">
-            <Image
-              src={image2}
-              alt="Gallery Image 7"
-              class="w-full h-full object-cover rounded-lg"
-            />
-          </div>
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className={`${
+                index === 0 || index === 3 ? "col-span-2 row-span-2" : "col-span-1 row-span-1"
+              } cursor-pointer`}
+              onClick={() => openImagePreview(index)}
+            >
+              <Image
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className="w-full h-full object-cover "
+              />
+            </div>
+          ))}
         </div>
       </section>
+
+      {/* Modal for Image Preview */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-center items-center"
+          onClick={closeModal}
+        >
+          <div
+            className="relative bg-transparent overflow-hidden"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+          >
+            {/* Swiper for Image Sliding */}
+            <Swiper
+              initialSlide={currentImageIndex}
+              navigation
+              pagination={{ clickable: true }}
+              spaceBetween={5}
+              slidesPerView={1}
+              className="w-full lg:w-full h-full "
+            >
+              {galleryImages.map((image, index) => (
+                <SwiperSlide key={index}>
+                  <Image src={image} alt={`Preview ${index}`} className="w-full h-full object-cover" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* Close button */}
+            <Button
+              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg"
+              onClick={closeModal}
+            >
+              ✕
+            </Button>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 };
 
-export default aboutUs;
+export default AboutUs;

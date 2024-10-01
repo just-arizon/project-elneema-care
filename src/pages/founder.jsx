@@ -85,7 +85,7 @@ const founder = () => {
             <FaLinkedin />
           </span>
         </div>
-        <Card className="font-Manrope leading-7 lg:p-12 p-4  shadow-md">
+        <Card className="font-Manrope font-medium lg:p-12 p-4  shadow-md">
        
           <p className=" my-2">
             During my National Youth Service Corp in 2019, I was posted to a
@@ -103,10 +103,10 @@ const founder = () => {
           <p className=" my-2">
           In November, 2023, we launched a booklet <span className="inline font-semibold">‘’ NEEMA’S MENSTRUAL BOOKLET’’</span> a not to be sold booklet for school age girls and out of school girls to help enlighten them on the basics of menstruation. This initiative that started in the Northern part of Nigeria is fast growing and spreading to other parts of the country seeing that not only girls in the North need this knowledge and products. 
           </p>
-          <p className="leading-8 my-2">
+          <p className=" my-2">
           I look forward to a society where menstrual hygiene kits would be available at no cost at all, for the school girls or at a very reduced price which they can afford in order to help them manage their monthly flow. We would continue to do our best and hope that soon more individuals and other cooperate bodies, including the Government would join us in the fight against period poverty and end period stigmatization. Change is possible with targeted policies and investments. Cheers to seeing every girl child manage her menstruation with dignity, safety and confidence.
           </p>
-          <p className="leading-8 my-2">
+          <p className=" my-2">
           I am grateful to God for how far we have come and to all those who have been a part of this mission, vision, supporting and urging us on.
           </p>
         </Card>
