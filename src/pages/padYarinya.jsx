@@ -57,8 +57,9 @@ const padYarinya = () => {
       </div>
 
       <div className="font-medium font-Manrope mx-5">
-        <p className='py-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem reiciendis ex aut, molestias dolorem molestiae quos aperiam, magnam culpa harum magni similique repudiandae dolor, nemo porro officiis dignissimos provident reprehenderit eum? Odit reiciendis ea eius unde, a sequi debitis consequuntur ipsam ipsum, nam, magnam aperiam voluptatibus beatae fugit tenetur minima. Nobis enim distinctio sequi adipisci quo iste officiis laboriosam eum laudantium culpa laborum explicabo aliquam suscipit soluta ducimus deserunt vel blanditiis sapiente id, repudiandae harum omnis? Natus esse temporibus ducimus harum facere. Molestias, labore numquam expedita blanditiis aliquid iure. Ut minus mollitia asperiores tempore possimus! Eos sequi totam enim optio.</p>
-        <p className='py-5'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem reiciendis ex aut, molestias dolorem molestiae quos aperiam, magnam culpa harum magni similique repudiandae dolor, nemo porro officiis dignissimos provident reprehenderit eum? Odit reiciendis ea eius unde, a sequi debitis consequuntur ipsam ipsum, nam, magnam aperiam voluptatibus beatae fugit tenetur minima. Nobis enim distinctio sequi adipisci quo iste officiis laboriosam eum laudantium culpa laborum explicabo aliquam suscipit soluta ducimus deserunt vel blanditiis sapiente id, repudiandae harum omnis? Natus esse temporibus ducimus harum facere. Molestias, labore numquam expedita blanditiis aliquid iure. Ut minus mollitia asperiores tempore possimus! Eos sequi totam enim optio.</p>
+        <p className='py-5'>Through the Pad a Yarinya (P.A.Y) initiative a Menstrual Hygiene Education and Sanitary supply program targeted at young girls in rural communities and urban slums age 8-18 who are unable to afford period supplies and lack Menstrual Hygiene Education. Through the help of our donors, sponsors and volunteers we have been able to distribute Free Sanitary Pads and period guide pamphlet which have led to reduced school Absenteeism and curb of period stigma we have been running this program for 5 years now.
+        </p>
+        <p className='py-5'></p>
       </div>
     </div>
   )
