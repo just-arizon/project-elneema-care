@@ -3,7 +3,7 @@ import Logo from "../assets/El-neema.png";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
-import BackgroundImage from "../assets/footer-bg.jpg"; // Replace with your actual image path
+import BackgroundImage from "../assets/about-page.jpg"; // Replace with your actual image path
 import { FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
@@ -108,7 +108,7 @@ const Footer = () => {
         </div>
 
         <div className="text-white lg:mt-20 mt-15 px-10 justify-center">
-          <h4 className="lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center grid">
+          <h4 className="lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center grid text-sm">
             <span className="">
               Copyright © {currentYear} El-Neema Care Initiative. All rights
               reserved.{" "}

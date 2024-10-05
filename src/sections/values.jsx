@@ -1,6 +1,8 @@
 import React from 'react'
 import { motion } from "framer-motion";
-
+import { GiStigmata } from "react-icons/gi";
+import { RiLightbulbFlashFill } from "react-icons/ri";
+import { Card, CardHeader, CardBody} from "@nextui-org/react"
 const values = () => {
     const textVariant = {
         hidden: { opacity: 0, y: 20 },
@@ -14,6 +16,30 @@ const values = () => {
           },
         }),
       };
+
+
+      const cards = [
+        {
+        icon: <GiStigmata />,
+        title: "Advocacy",
+         body:" We actively work to challenge societal norms, policies, and practices that perpetuate period poverty and menstrual stigma"
+        },
+        {
+        icon:<RiLightbulbFlashFill />,    
+        title: "Collaborations",
+         body:"We believe in building strong partnerships with government agencies, NGOs, and communities to achieve our goals."
+        },
+        {
+        icon:<RiLightbulbFlashFill />,    
+        title: "Compassion",
+         body:"We approach our mission with empathy and care, understanding the challenges individuals face and providing support with respect and kindness."
+        },
+        {
+        icon:<RiLightbulbFlashFill />,    
+        title: "Empowerment",
+         body:"We believe in empowering individuals especially women and girls through education and awareness, giving them the tools to manage their menstrual health confidently and enable them make informed choices about their health and well-being."
+        },
+    ]
   return (
     <section className="grid lg:grid-cols-1 md:grid-cols-1  lg:gap-10 lg:w-full lg:my-32">
       
@@ -36,6 +62,23 @@ const values = () => {
     <div className="flex lg:justify-center justify-center">
       <div className="w-12 h-1 lg:mt-2 bg-orange-400"></div>
     </div>
+
+    <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1  gap-6 justify-center lg:px-20 px-5 my-10">
+            {cards.map((card, index) => (
+                <Card className="lg:p-10 px-5 py-10" key={index}>
+
+                    <CardHeader className='text-2xl font-Inter font-semibold text-center flex gap-2 grid justify-center'>
+                        <span className="flex justify-center bg- text-4xl">
+                            {card.icon}
+                        </span>             
+                        <span className="">
+                            {card.title}
+                        </span>             
+                        </CardHeader>
+                    <CardBody className='leading-8 text-center'>{card.body}</CardBody>
+                </Card>
+            ))}
+        </div>
 
   </div>
   </section>

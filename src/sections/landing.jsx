@@ -150,9 +150,12 @@ const textVariant = {
 
           </div>
 
-          {/* YouTube iframe with close button */}
-          {showVideo && (
-            <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
+       
+        </div>
+      </div>
+         {/* YouTube iframe with close button */}
+         {showVideo && (
+            <div className="absolute top-0 flex justify-center items-center bg- bg-opacity- z-50 overflow-hidden w-full">
               <div className="relative gap-5 grid">
                 <div className="flex justify-center">
                   <button
@@ -162,9 +165,9 @@ const textVariant = {
                     <IoMdClose />
                   </button>
                 </div>
-                <div className="px-5">
+                <div className="px-5 ">
                   <iframe
-                    width="560"
+                    width="460"
                     height="315"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
                     title="YouTube video player"
@@ -176,9 +179,6 @@ const textVariant = {
               </div>
             </div>
           )}
-        </div>
-      </div>
-      
       </section>
   )
 }

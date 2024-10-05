@@ -115,7 +115,7 @@ const AboutUs = () => {
             </div>
             <div className="font-extrabold">
               <p className="text-2xl">5</p>
-              <p className="text-xl">YEAR+ OF LOVE</p>
+              <p className="text-xl">YEAR+ OF PADDING THE GIRL CHILD</p>
             </div>
           </div>
         </div>
