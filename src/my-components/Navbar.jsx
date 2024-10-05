@@ -30,6 +30,10 @@ import { Link } from "@nextui-org/react";
 import {
     Navbar
   } from "@nextui-org/navbar";
+  import { FaPhoneFlip } from "react-icons/fa6";
+  import { MdOutlineMailOutline } from "react-icons/md";
+  import { IoLocationSharp } from "react-icons/io5";
+
 
 const navBar = () => {
   const menuItems = [
@@ -54,6 +58,17 @@ const navBar = () => {
     { name: "Support Us", link: "/support" },
   ];
 
+  const contacts = [
+    {name: "elneemacaresinitiative@gmail.com",
+      icon: <MdOutlineMailOutline />,
+    },
+    {name: "13, Line 3, Police Estate Karsana, Abuja",
+      icon: <IoLocationSharp />,
+    },
+    {name: "+234 813 628 0417",
+      icon: <FaPhoneFlip />,
+    }
+  ]
   return (
     <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
       <div className="w-full flex items-center justify-between py-4">
@@ -105,12 +120,12 @@ const navBar = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className="lg:hidden md:hidden block text-2xl">
+        <div className="lg:hidden md:hidden block text-2xl overflow-auto">
           <Sheet>
             <SheetTrigger>
               <TbMenuDeep />
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="">
               <SheetHeader className="mt-10">
                 <SheetTitle className="flex gap-1 justify-start">
                   <img src={sheetLogo} alt="logo" className="h-7 w-7" />
@@ -141,10 +156,23 @@ const navBar = () => {
                       )}
                     </Accordion>
                   ))}
+                  <div className="my-5">
+                    {contacts.map((contact, index) => (
+                   <ul className="flex flex-start gap-5" key={index}>
+                   <li className="flex my-2 gap-1">
+                    <span className="flex items-center">{contact.icon}</span>
+                    <span className="">{contact.name}</span>
+                   </li>
+                   </ul>
+                    ))}
+
+                    </div>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
+
           </Sheet>
+          
         </div>
       </div>
     </Navbar>

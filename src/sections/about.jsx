@@ -114,7 +114,7 @@ const AboutUs = () => {
               <SlTrophy />
             </div>
             <div className="font-extrabold">
-              <p className="text-2xl">1</p>
+              <p className="text-2xl">5</p>
               <p className="text-xl">YEAR+ OF LOVE</p>
             </div>
           </div>

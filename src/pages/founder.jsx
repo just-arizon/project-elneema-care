@@ -87,7 +87,7 @@ const founder = () => {
         </div>
         <Card className="font-Manrope font-medium lg:p-12 p-4  shadow-md">
        
-          <p className=" my-2">
+          <p className="leading-8 my-2">
             During my National Youth Service Corp in 2019, I was posted to a
             rural community (Babban Saura) in Kaduna State, where young girls
             didn’t have adequate menstrual knowledge and also lack access to

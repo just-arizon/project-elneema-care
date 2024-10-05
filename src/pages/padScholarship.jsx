@@ -56,7 +56,7 @@ const padScholarship = () => {
       </div>
 
       <div className="font-medium font-Manrope mx-5">
-        <p className='py-5'>The Pad Scholarship Scheme (P.S.S) initiative is a School Attendance Support Program targeted at community secondary schools focusing on young girls age 8-18 which we have been running for 6 months now. Through the help of our donors, sponsors and volunteers we have been able to award pad scholarship to girls by giving a year supply of sanitary products to one girl every month and also covering her tuition fees pay for a year this way indigent girls are eased the financial burden which enable them focus on their studies and maximizing their full potentials. This program has helped us raise young girls who become advocates for women across different communities enabling them to become a catalyst for change and an influencer to other young girls.
+        <p className='py-5 leading-8'>The Pad Scholarship Scheme (P.S.S) initiative is a School Attendance Support Program targeted at community secondary schools focusing on young girls age 8-18 which we have been running for 6 months now. Through the help of our donors, sponsors and volunteers we have been able to award pad scholarship to girls by giving a year supply of sanitary products to one girl every month and also covering her tuition fees pay for a year this way indigent girls are eased the financial burden which enable them focus on their studies and maximizing their full potentials. This program has helped us raise young girls who become advocates for women across different communities enabling them to become a catalyst for change and an influencer to other young girls.
         </p>
         <p className='py-5'></p>
       </div>

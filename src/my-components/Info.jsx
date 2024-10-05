@@ -23,11 +23,11 @@ const info = () => {
       <div className="flex gap-5">
         <small className="flex gap-1">
           <div className='flex items-center'><FaPhoneFlip /></div>
-          <div>+234 813 628 0417</div>
+          <div></div>
           </small>
         <small className="flex gap-1">
         <div className='flex items-center'><MdOutlineMailOutline /></div>
-          <div>info@gmail.com</div>
+          <div></div>
           </small>
       </div>
 

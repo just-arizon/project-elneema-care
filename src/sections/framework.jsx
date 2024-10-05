@@ -65,7 +65,7 @@ const framework = () => {
                         <span className="">{card.title}</span>
                         
                         </CardHeader>
-                    <CardBody className='text-'>{card.body}</CardBody>
+                    <CardBody className='leading-8'>{card.body}</CardBody>
                 </Card>
             ))}
         </div>
