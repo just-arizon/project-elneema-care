@@ -3,6 +3,10 @@ import Logo from "../assets/El-neema.png";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
+import { IoLogoTiktok } from "react-icons/io5";
+
+
 import BackgroundImage from "../assets/about-page.jpg"; // Replace with your actual image path
 import { FaPhoneFlip } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
@@ -37,9 +41,10 @@ const Footer = () => {
   ];
 
   const footerIcons = [
-    { img: <FaLinkedinIn />, href: "#linkedIn" },
-    { img: <FaFacebookF />, href: "#linkedIn" },
-    { img: <RiTwitterXFill />, href: "#twitter" },
+    { img: <FaLinkedinIn />, href: "https://www.linkedin.com/company/el-neema-cares-initiative/" },
+    { img: <FaFacebookF />, href: "https://www.facebook.com/share/p42aqYin7Tx1Yaxg/?mibextid=LQQJ4d" },
+    { img: <PiInstagramLogoFill />, href: "https://www.instagram.com/elneema_cares?igsh=MWdiMDZ2MHRqYXljaA==" },
+    { img: <IoLogoTiktok />, href: "https://www.tiktok.com/@elneema_cares?_t=8qHkgFBycGT&_r=1" },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -86,7 +91,7 @@ const Footer = () => {
                 <a
                   key={index}
                   href={item.href}
-                  className="text-white hover:text-gray-600 py-2 rounded-md text-sm font-medium"
+                  className="text-white hover:text-gray-300 py-2 rounded-md text-sm font-medium"
                 >
                   {item.name}
                 </a>
@@ -99,7 +104,7 @@ const Footer = () => {
               <a
                 key={index}
                 href={item.href}
-                className="text-white hover:text-gray-600 p-2 text-sm font-medium border-2 rounded-full gap-5 mr-6"
+                className="text-white hover:text-gray-400 p-2 text-sm font-medium border-2 rounded-full gap-5 mr-6"
               >
                 {item.img}
               </a>

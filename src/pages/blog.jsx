@@ -100,7 +100,7 @@ const Blog = () => {
                   <div className=""><span className="bg-orange-500 px-2 text-sm">{blogCard.tag}</span>
                   </div>
                   <Link href={blogCard.href}>
-                    <div className="text-xl font-bold text-white">{blogCard.title}</div>
+                    <div className="text-md font-bold text-white">{blogCard.title}</div>
                   </Link>
               </div>
 

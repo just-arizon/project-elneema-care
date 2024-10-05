@@ -2,6 +2,9 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { GiStigmata } from "react-icons/gi";
 import { RiLightbulbFlashFill } from "react-icons/ri";
+import { TiGroup } from "react-icons/ti";
+import { ImPower } from "react-icons/im";
+import { CgPathExclude } from "react-icons/cg";
 import { Card, CardHeader, CardBody} from "@nextui-org/react"
 const values = () => {
     const textVariant = {
@@ -25,17 +28,17 @@ const values = () => {
          body:" We actively work to challenge societal norms, policies, and practices that perpetuate period poverty and menstrual stigma"
         },
         {
-        icon:<RiLightbulbFlashFill />,    
+        icon:<TiGroup />,    
         title: "Collaborations",
          body:"We believe in building strong partnerships with government agencies, NGOs, and communities to achieve our goals."
         },
         {
-        icon:<RiLightbulbFlashFill />,    
+        icon:<CgPathExclude />,    
         title: "Compassion",
          body:"We approach our mission with empathy and care, understanding the challenges individuals face and providing support with respect and kindness."
         },
         {
-        icon:<RiLightbulbFlashFill />,    
+        icon:<ImPower />,    
         title: "Empowerment",
          body:"We believe in empowering individuals especially women and girls through education and awareness, giving them the tools to manage their menstrual health confidently and enable them make informed choices about their health and well-being."
         },
