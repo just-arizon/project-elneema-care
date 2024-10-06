@@ -11,6 +11,8 @@ import {
   import memberImg1 from "../assets/founder.jpg";
   import memberImg2 from "../assets/Kosi.jpg";
   import memberImg3 from "../assets/Arizon2.jpg";
+  import memberImg4 from "../assets/member[4].jpg";
+  import memberImg5 from "../assets/member[5].jpg";
 
   import { motion } from "framer-motion";
 
@@ -40,7 +42,7 @@ import {
       id: 2,
       img: memberImg2,
       name: "Kosisochukwu Charity Ani",
-      role: "Product Manager",
+      role: "Communications and Programs Lead",
       socials: {
         linkedin:
           "https://www.linkedin.com/in/kosisochukwu-ani-735a941b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -54,10 +56,30 @@ import {
         id: 3,
         img: memberImg3,
         name: "Arinze Chinweuba",
-        role: "Front-End Developer",
+        role: "Technical Lead",
         socials: {
           twitter: "https://x.com/just_Arizon",
           linkedin: "https://www.linkedin.com/in/arinze-calistus/",
+        },
+      },
+      {
+        id: 4,
+        img: memberImg4,
+        name: "Akinpelu Oluwatosin Ebenezer",
+        role: "Graphics Designer",
+        socials: {
+          twitter: "",
+          linkedin: "",
+        },
+      },
+      {
+        id: 5,
+        img: memberImg5,
+        name: "Abigail Medeoluje",
+        role: "Volunteer Lead",
+        socials: {
+          twitter: "",
+          linkedin: "",
         },
       },
   
