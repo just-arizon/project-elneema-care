@@ -9,89 +9,102 @@ import LandingImg2 from "../assets/landing[2].jpg";
 import LandingImg3 from "../assets/landing[3].jpg";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import './styles.css';
+import "./styles.css";
+//
+// required parameter to fetch images
+const urlEndpoint = " https://ik.imagekit.io/vzma9sfet/";
+import { IKImage, IKVideo, IKContext, IKUpload } from "imagekitio-react";
 
 // import required modules
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 const Landing = () => {
   const [showVideo, setShowVideo] = useState(false);
   // Animation variants for the text paragraphs
-const textVariant = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.3, // Stagger the animation
-      duration: 0.6,
-      ease: "easeInOut",
-    },
-  }),
-};
+  const textVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.3, // Stagger the animation
+        duration: 0.6,
+        ease: "easeInOut",
+      },
+    }),
+  };
   return (
     <section className="bg-blue- relative">
-
-
       <div className="h-svh max-h-[550px] relative">
-      <Swiper
-        spaceBetween={0}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        
-        navigation={false}
-        modules={[Autoplay]}
-        loop={true}
-        effect={"coverflow"}
-        className="mySwiper"
-      >
-        <SwiperSlide 
-        className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
-        style={{ backgroundImage: `
+        <Swiper
+          spaceBetween={0}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          navigation={false}
+          modules={[Autoplay]}
+          loop={true}
+          effect={"coverflow"}
+          className="mySwiper"
+        >
+          <SwiperSlide
+            className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
+            style={{
+              backgroundImage: `
           
           url(${LandingImg1})`,
-          
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
-          zIndex: -1,
-         }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
-        <SwiperSlide 
-        className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
-        style={{ backgroundImage: `url(${LandingImg2})`,
-          
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
-          zIndex: -1,
-         }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
-        <SwiperSlide 
-        className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
-        style={{ backgroundImage: `url(${LandingImg3})`,
-          
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'brightness(.8) contrast(1)', // Adjust these values as needed
-          zIndex: -1,
-         }}>  {/* Apply an overlay to reduce brightness */}
-        <div className="absolute inset-0 bg-black opacity-70"></div></SwiperSlide>
-       
-      </Swiper>
- 
+
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "brightness(.8) contrast(1)", // Adjust these values as needed
+              zIndex: -1,
+            }}
+          >
+            {" "}
+            {/* Apply an overlay to reduce brightness */}
+            <div className="absolute inset-0 bg-black opacity-70"></div>
+          </SwiperSlide>
+          <SwiperSlide
+            className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
+            style={{
+              backgroundImage: `url(${LandingImg2})`,
+
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "brightness(.8) contrast(1)", // Adjust these values as needed
+              zIndex: -1,
+            }}
+          >
+            {" "}
+            {/* Apply an overlay to reduce brightness */}
+            <div className="absolute inset-0 bg-black opacity-70"></div>
+          </SwiperSlide>
+          <SwiperSlide
+            className="grid-layout bg-cover bg-center lg:w-full w-full h-full absolute"
+            style={{
+              backgroundImage: `url(${LandingImg3})`,
+
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              filter: "brightness(.8) contrast(1)", // Adjust these values as needed
+              zIndex: -1,
+            }}
+          >
+            {" "}
+            {/* Apply an overlay to reduce brightness */}
+            <div className="absolute inset-0 bg-black opacity-70"></div>
+          </SwiperSlide>
+        </Swiper>
       </div>
 
-      
       <div className="landing flex flex-col lg:justify- items- pt-28 lg:px-20 px-5 z-10 w-full h- absolute top-0">
         <div className="flex flex-col justify-center ">
           <motion.h1
@@ -106,11 +119,10 @@ const textVariant = {
               custom={0}
               className="text-orange-400 font-extrabold lg:w-2/3"
             >
-            
-              Ending Period Poverty In Africa 
+              Ending Period Poverty In Africa
             </motion.div>
             <motion.div variants={textVariant} custom={1} className="lg:w-4/5">
-            One Girl At At Time
+              One Girl At At Time
             </motion.div>
           </motion.h1>
           <motion.p
@@ -120,7 +132,8 @@ const textVariant = {
             custom={2}
             className="text-white lg:text-start text-center py-3 lg:w-3/5 font-Montserrat"
           >
-            The Watch Word: We give not because we have enough but because we know how it feels not to have.
+            The Watch Word: We give not because we have enough but because we
+            know how it feels not to have.
           </motion.p>
 
           <div className="flex lg:justify-start justify-center pt-3 gap-4">
@@ -147,40 +160,35 @@ const textVariant = {
                 </Button>
               </div>
             </div>
-
           </div>
-
-       
         </div>
       </div>
-         {/* YouTube iframe with close button */}
-         {showVideo && (
-            <div className="absolute top-0 flex justify-center items-center bg- bg-opacity- z-50 overflow-hidden w-full">
-              <div className="relative gap-5 grid">
-                <div className="flex justify-center">
-                  <button
-                    onClick={() => setShowVideo(false)}
-                    className=" text-white bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-20 rounded-full w-10 h-10 z-50 flex justify-center items-center text-lg"
-                  >
-                    <IoMdClose />
-                  </button>
-                </div>
-                <div className="px-5 ">
-                  <iframe
-                    width="460"
-                    height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
-              </div>
+      {/* YouTube iframe with close button */}
+      {showVideo && (
+        <div className="absolute top-0 flex justify-center items-center bg- bg-opacity- z-50 overflow-hidden w-full h-">
+          <div className="relative gap-5 grid">
+            <div className="flex justify-center">
+              <button
+                onClick={() => setShowVideo(false)}
+                className=" text-white bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-20 rounded-full w-10 h-10 z-50 flex justify-center items-center text-lg"
+              >
+                <IoMdClose />
+              </button>
             </div>
-          )}
-      </section>
-  )
-}
+            <div className="px-5 ">
+              <IKVideo
+                urlEndpoint={urlEndpoint}
+                path="/El-neema-data/el-neema-video.mp4"
+                width="640"
+                height="1138"
+                autoPlay
+              />
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
 
-export default Landing
+export default Landing;
