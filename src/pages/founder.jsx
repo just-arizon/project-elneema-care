@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Card, CardBody } from "@nextui-org/react";
+import { Image, Card, Button, Link } from "@nextui-org/react";
 import FounderImg from "../assets/founder.jpg";
 import {
   Breadcrumb,
@@ -74,16 +74,26 @@ const founder = () => {
           Ms Mabel Adojo
         </motion.h2>
 
-        <div className="flex justify-center gap-5 mb-5 text-xl text-white">
-          <span className="bg-orange-400 p-2 rounded-md">
+        <div className="flex justify-center gap-2 mb-5 text-xl text-white">
+            <Button
+                      as={Link}
+                      isIconOnly
+                      href="https://www.instagram.com/mabel_adojo911?utm_source=qr&igsh=anljazhwNWF0ZGls"
+                      target="_blank"
+                      className=" w-10 h-10"
+                    >
             <PiInstagramLogoDuotone />
-          </span>
-          <span className="bg-orange-400 p-2 rounded-md">
+          </Button>
+            <Button
+                      as={Link}
+                      isIconOnly
+                      href="https://www.facebook.com/mabel.adojo?mibextid=ZbWKwL"
+                      target="_blank"
+                      className=" w-10 h-10"
+                    >
             <FaFacebookF />
-          </span>
-          <span className="bg-orange-400 p-2 rounded-md">
-            <FaLinkedin />
-          </span>
+          </Button>
+          
         </div>
         <Card className="font-Manrope font-medium lg:p-12 p-4  shadow-md">
        

@@ -20,10 +20,10 @@ const Testimonials = () => {
   const supporters = [
     {
       avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Dr Dara",
+      name: "Magdalene Azurunwa",
       occupation: "Medical Doctor",
       feedback:
-        "The Glow foundation is one to stand out, to reach out and help out, making global impact, one child at a time",
+        `I am glad to support the initiative because I know how discomforting it can be to use anything other that a sanitary pad or any sanitary hygiene kits. I'll keep doing my bit and hope that soon, we will get more people to join in advocating for these young school age girls.`,
     },
     {
       avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
@@ -125,7 +125,7 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm">{supporter.feedback}</p>
+                  <p className="text-sm leading-7">{supporter.feedback}</p>
                 </div>
               </>
             )}
