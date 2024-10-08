@@ -82,7 +82,7 @@ const founder = () => {
                       target="_blank"
                       className=" w-10 h-10"
                     >
-            <PiInstagramLogoDuotone />
+            <PiInstagramLogoDuotone size={16}/>
           </Button>
             <Button
                       as={Link}
@@ -91,7 +91,7 @@ const founder = () => {
                       target="_blank"
                       className=" w-10 h-10"
                     >
-            <FaFacebookF />
+            <FaFacebookF size={16}/>
           </Button>
           
         </div>

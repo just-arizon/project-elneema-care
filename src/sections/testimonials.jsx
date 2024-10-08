@@ -27,17 +27,19 @@ const Testimonials = () => {
     },
     {
       avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-      name: "Jane Doe",
+      name: "Onyinyechukwu  Nwokwu",
       occupation: "Nurse",
       feedback:
-        "I am proud to support the Glow foundation and its efforts to change lives.",
+        `ElNeema Cares Initiative opened my eyes to the fact that period poverty was a thing, especially in certain parts of Nigeria. Listening to the burden behind the initiative spurred me to contribute towards easing this burden. A truly remarkable and thoughtful endeavour it is!
+`,
     },
     {
       avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
-      name: "Diana Smith",
+      name: "Clement Illiambe",
       occupation: "Social Worker",
       feedback:
-        "Every little effort counts, and the Glow foundation is making a big difference!",
+        `I choose to support ElNeema Cares because your initiative addresses a critical need that often goes unspoken. Your tireless efforts to provide menstrual products and education to those in need resonate deeply with me.
+`,
     },
   ];
 
@@ -108,7 +110,7 @@ const Testimonials = () => {
               </>
             ) : (
               <>
-                <div className="flex gap-5">
+                <div className="flex gap-2">
                   <div>
                       <Avatar
                         src={supporter.avatar}

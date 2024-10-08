@@ -33,7 +33,10 @@ import {
   import { FaPhoneFlip } from "react-icons/fa6";
   import { MdOutlineMailOutline } from "react-icons/md";
   import { IoLocationSharp } from "react-icons/io5";
-
+  import { FaLinkedinIn } from "react-icons/fa6";
+  import { FaFacebookF } from "react-icons/fa";
+  import { PiInstagramLogoFill } from "react-icons/pi";
+  import { IoLogoTiktok } from "react-icons/io5";
 
 const navBar = () => {
   const menuItems = [
@@ -62,13 +65,20 @@ const navBar = () => {
     {name: "elneemacaresinitiative@gmail.com",
       icon: <MdOutlineMailOutline />,
     },
-    {name: "13, Line 3, Police Estate Karsana, Abuja",
+    {name: "Line 3, Police Estate Karsana, Abuja",
       icon: <IoLocationSharp />,
     },
-    {name: "+234 813 628 0417",
+    {name: "+234 813 628 0417 | +234 813 628 0417",
       icon: <FaPhoneFlip />,
     }
-  ]
+  ];
+
+  const NavbarIcons = [
+    { img: <FaLinkedinIn />, href: "https://www.linkedin.com/company/el-neema-cares-initiative/" },
+    { img: <FaFacebookF />, href: "https://www.facebook.com/share/p42aqYin7Tx1Yaxg/?mibextid=LQQJ4d" },
+    { img: <PiInstagramLogoFill />, href: "https://www.instagram.com/elneema_cares?igsh=MWdiMDZ2MHRqYXljaA==" },
+    { img: <IoLogoTiktok />, href: "https://www.tiktok.com/@elneema_cares?_t=8qHkgFBycGT&_r=1" },
+  ];
   return (
     <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
       <div className="w-full flex items-center justify-between py-4">
@@ -161,12 +171,23 @@ const navBar = () => {
                    <ul className="flex flex-start gap-5" key={index}>
                    <li className="flex my-2 gap-1">
                     <span className="flex items-center">{contact.icon}</span>
-                    <span className="">{contact.name}</span>
+                    <span className="">{contact.name} </span>
                    </li>
                    </ul>
                     ))}
 
                     </div>
+                    <div className="footer-social flex items-center pt-5">
+            {NavbarIcons.map((item, index) => (
+              <a
+                key={index}
+                href={item.href}
+                className="text-black hover:text-gray-400 p-2 text-sm font-medium border-2 rounded-full gap-5 mr-6"
+              >
+                {item.img}
+              </a>
+            ))}
+          </div>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
