@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Card, Skeleton, Avatar } from "@nextui-org/react";
 import { ImQuotesLeft } from "react-icons/im";
+import { FaUserAlt } from "react-icons/fa";
 
 const Testimonials = () => {
   const textVariant = {
@@ -19,24 +20,24 @@ const Testimonials = () => {
 
   const supporters = [
     {
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+      avatar: 'https://images.unsplash.com/broken',
       name: "Magdalene Azurunwa",
-      occupation: "Medical Doctor",
+      // occupation: "Medical Doctor",
       feedback:
         `I am glad to support the initiative because I know how discomforting it can be to use anything other that a sanitary pad or any sanitary hygiene kits. I'll keep doing my bit and hope that soon, we will get more people to join in advocating for these young school age girls.`,
     },
     {
-      avatar: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+      avatar: 'https://images.unsplash.com/broken',
       name: "Onyinyechukwu  Nwokwu",
-      occupation: "Nurse",
+      // occupation: "Nurse",
       feedback:
         `ElNeema Cares Initiative opened my eyes to the fact that period poverty was a thing, especially in certain parts of Nigeria. Listening to the burden behind the initiative spurred me to contribute towards easing this burden. A truly remarkable and thoughtful endeavour it is!
 `,
     },
     {
-      avatar: "https://i.pravatar.cc/150?u=a04258114e29026702d",
+      avatar: 'https://images.unsplash.com/broken',
       name: "Clement Illiambe",
-      occupation: "Social Worker",
+      // occupation: "Social Worker",
       feedback:
         `I choose to support ElNeema Cares because your initiative addresses a critical need that often goes unspoken. Your tireless efforts to provide menstrual products and education to those in need resonate deeply with me.
 `,
@@ -111,11 +112,12 @@ const Testimonials = () => {
             ) : (
               <>
                 <div className="flex gap-2">
-                  <div>
+                  <div className="">
                       <Avatar
                         src={supporter.avatar}
                         alt={supporter.name}
                         size="lg"
+                        showFallback 
                       />
                   </div>
                   <div className="space-y-1 w-full">
