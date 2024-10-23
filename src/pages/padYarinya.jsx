@@ -57,7 +57,7 @@ const padYarinya = () => {
       </div>
 
       <div className="font-medium font-Manrope mx-5">
-        <p className='py-5 leading-8'>Through the Pad a Yarinya (P.A.Y) initiative a Menstrual Hygiene Education and Sanitary supply program targeted at young girls in rural communities and urban slums age 8-18 who are unable to afford period supplies and lack Menstrual Hygiene Education. Through the help of our donors, sponsors and volunteers we have been able to distribute Free Sanitary Pads and period guide pamphlet which have led to reduced school Absenteeism and curb of period stigma we have been running this program for 5 years now.
+        <p className='py-5 leading-8'>Through the Pad a Yarinya (P.A.Y) initiative a Menstrual Hygiene Education and Sanitary supply program targeted at young girls in rural communities and urban slums age 8-18(both in and out of school) who are unable to afford period supplies and lack Menstrual Hygiene Education. Through the help of our donors, sponsors and volunteers we have been able to distribute Free Sanitary Pads and period guide pamphlets which have led to reduced school Absenteeism and curb of period stigma. We have been running this program for 5 years now.
         </p>
         <p className='py-5'></p>
       </div>

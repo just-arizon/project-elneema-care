@@ -41,7 +41,7 @@ import {
 const navBar = () => {
   const menuItems = [
     {
-      name: "Charity",
+      name: "Our initiative",
       subMenu: [
         { name: "Pad a Yarinya", link: "/pad-a-yarinya" },
         { name: "Widow Smile", link: "/widows-smile" },

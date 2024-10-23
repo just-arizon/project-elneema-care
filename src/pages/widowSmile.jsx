@@ -57,7 +57,7 @@ const widowSmile = () => {
       </div>
 
       <div className="font-medium font-Manrope mx-5">
-        <p className='py-5'>Through the Widows Smile at Christmas (W.S.C) initiative we have been able to distribute Free Sanitary Pads and food items to indigent widows every Christmas to enable them manage their monthly flow alongside other demands</p>
+        <p className='py-5'>Through the Widows Smile at Christmas (W.S.C) initiative we have been able to distribute Free Sanitary Pads and food items to indigent widows every Christmas to enable them manage their monthly flow alongside other demands. This particular initiative is our way of supporting widows and breaking the stigma around widowhood in Nigeria.</p>
         <p className='py-5'> </p>
       </div>
     </div>

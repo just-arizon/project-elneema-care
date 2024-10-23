@@ -21,9 +21,9 @@ const Explore = () => {
   };
   const [count, setCount] = useState(0);
 
-  // Count-up effect to 3000
+  // Count-up effect to 10
   useEffect(() => {
-    if (count < 3000) {
+    if (count < 10) {
       const timer = setInterval(() => {
         setCount((prevCount) => prevCount + 1);
       }, 1); // Speed up or slow down the interval as needed
@@ -35,7 +35,7 @@ const Explore = () => {
     {
       id: 1,
       icons: <SiWorldhealthorganization size={40}/>,
-      numbers: 30,
+      numbers: 25,
       title: "Volunteers",
     },
     {
