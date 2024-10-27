@@ -100,7 +100,7 @@ const Blog = () => {
         </Breadcrumb>
       </div>
 
-      <div className=" grid grid-cols-3 gap-6 px-5 font-Manrope lg:my-20">
+      <div className=" grid lg:grid-cols-3 gap-6 px-5 font-Manrope lg:my-20">
         {blogCards.map((blogCard, index) => (
           <Card
             key={index}
