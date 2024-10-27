@@ -6,6 +6,7 @@ import Explore from "../sections/explore";
 import About from "../sections/about";
 import Framework from "../sections/framework";
 import Values from "../sections/values";
+import Volunteer from "../sections/volunteer";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <About />
       <Explore />
       <Testimonials />
+      <Volunteer />
     </motion.div>
   );
   

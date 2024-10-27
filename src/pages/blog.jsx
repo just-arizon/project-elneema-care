@@ -43,6 +43,24 @@ const blogCards = [
     conversations: 0,
     href: "/schorlarship-scheme",
   },
+  {
+    img: BlogPostImg,
+    tag: "Charity",
+    title: "El Neema Cares Period Guide Booklet: We have a “not to be sold booklet” for adolescent girls teaching them how to better manage their flow...",
+    date: "Oct 5, 2023",
+    owner: "El-Neema",
+    conversations: 0,
+    href: "/schorlarship-scheme",
+  },
+  {
+    img: BlogPostImg,
+    tag: "Charity",
+    title: "ad on the Street (P.O.S): This initiative was created specifically for out of school girls especially those hawking...",
+    date: "Oct 5, 2023",
+    owner: "El-Neema",
+    conversations: 0,
+    href: "/schorlarship-scheme",
+  },
 ];
 
 const Blog = () => {
@@ -82,7 +100,7 @@ const Blog = () => {
         </Breadcrumb>
       </div>
 
-      <div className="lg:flex grid grid-cols-1 gap-6 px-5 font-Manrope lg:my-20">
+      <div className=" grid grid-cols-3 gap-6 px-5 font-Manrope lg:my-20">
         {blogCards.map((blogCard, index) => (
           <Card
             key={index}

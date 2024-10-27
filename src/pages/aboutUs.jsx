@@ -95,27 +95,12 @@ const AboutUs = () => {
 
       <section className="lg:mx-10 mx-5 my-7">
         <p className="font-Inter leading-8 my-5">
-          <span className="text-3xl font-bold">S</span>ince 5 years of being in
-          existence we have carried out outreach in 11 states and 18 local
-          governments across Nigeria visiting over 20 schools and communities
-          and impacted over 8500 girls age 8-18(both in and out of school)
-          living in rural areas and urban slums. Addressing SDG
-          1,2,3,4,5,10,12,17. El-Neema Cares initiative was founded in 2019 and
-          our main goal is to end period poverty and stigma in Africa by
-          providing sanitary products and education to young girls age 8-18
-          through 4 initiatives Pad a Yarinya (P.A.Y), Widows Smile at Christmas
-          (W.S.C), Pad Scholarship Scheme (P.S.S) and El Neema Cares period
-          guide.
+          <span className="text-3xl font-bold">O</span>ur story dates back to 2000 when our founder had her menstration experience at the age of 12 due to her inability to afford sanitary products, she resorted to using paper which left her bruised and made her dread period. Up until today this is the story of millions of African girls out there as a study by the ActionAid UK shows that 1 in 10 girls living in Africa miss school, sport activities or work due to lack of sanitary products and they resort use of unsanitary items such as rags, paper or even leaves which can lead to infection, bruises and severe reproductive and mental health issues.
         </p>
 
         <p className="font-Inter leading-8 my-5">
-          <span className="text-3xl font-bold">M</span>ajor issues we tackle is
-          lack of sanitary and hygienic menstrual supplies such as pads,
-          tampons, hot water bottles or tubes, Lack of adequate information on
-          how to handle their menstrual hygiene pre and post cycle, Lack of
-          support system when dealing with mental or health issues associated
-          with periods such as mood swings, menstrual cramps, irregular or heavy
-          periods.
+          <span className="text-3xl font-bold">El</span> Neema Cares initiative was founded in 2019 with the indigent girlchild in mind, our main goal is to end period poverty and stigma in Africa by providing sanitary products, education and empowerment to young girls age 8-18 through 5 initiatives,
+
         </p>
         <p className="font-Inter leading-8 my-5">
           <span className="text-3xl font-bold">O</span>ur story dates back to

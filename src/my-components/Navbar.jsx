@@ -37,6 +37,7 @@ import {
   import { FaFacebookF } from "react-icons/fa";
   import { PiInstagramLogoFill } from "react-icons/pi";
   import { IoLogoTiktok } from "react-icons/io5";
+  import { ToastProvider } from "@/components/ui/toast";
 
 const navBar = () => {
   const menuItems = [
@@ -54,7 +55,7 @@ const navBar = () => {
         { name: "Founder", link: "/founder" },
         { name: "About Us", link: "/about" },
         { name: "Our Team", link: "/our-team" },
-        { name: "Volunteers", link: "/volunteers" },
+        { name: "Become A Volunteer", link: "https://docs.google.com/forms/d/e/1FAIpQLSfRR6UwEJ89KyRzlqHmaEHD7xNgjwug8aGNBCryQwkdSgEqNA/viewform" },
       ],
     },
     { name: "Contact Us", link: "/contact" },
@@ -80,7 +81,8 @@ const navBar = () => {
     { img: <IoLogoTiktok />, href: "https://www.tiktok.com/@elneema_cares?_t=8qHkgFBycGT&_r=1" },
   ];
   return (
-    <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
+    <ToastProvider>
+ <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
       <div className="w-full flex items-center justify-between py-4">
         <Link href="/">
           <Image src={Logo} alt="Logo" className="cursor-pointer h-12 w-16" />
@@ -197,6 +199,8 @@ const navBar = () => {
         </div>
       </div>
     </Navbar>
+    </ToastProvider>
+   
   );
 };
 

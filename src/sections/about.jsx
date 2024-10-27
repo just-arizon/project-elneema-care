@@ -27,6 +27,7 @@ const initiatives = [
   { name: "Pad a Yarinya (P.A.Y)" },
   { name: "Widows Smile at Christmas (W.S.C)" },
   { name: "Pad Scholarship Scheme (P.S.S)" },
+  { name: "Pad on the Street (P.O.S)" },
   { name: "El Neema Cares period guide" },
 ];
 
@@ -58,7 +59,7 @@ const AboutUs = () => {
           </motion.div>
 
           <div className="flex lg:justify-start justify-center">
-            <div className="w-12 h-1 lg:mt-1 bg-orange-400 mb-3"></div>
+            <div className="w-12 h-1 mt-2 bg-orange-400 mb-3"></div>
           </div>
 
           <p className="text-center lg:text-start lg:mb-10 pt- font-Manrope font-medium">
