@@ -50,16 +50,16 @@ const blogCards = [
     date: "Oct 5, 2023",
     owner: "El-Neema",
     conversations: 0,
-    href: "/schorlarship-scheme",
+    href: "/guide-booklet",
   },
   {
     img: BlogPostImg,
     tag: "Charity",
-    title: "ad on the Street (P.O.S): This initiative was created specifically for out of school girls especially those hawking...",
+    title: "Pad on the Street (P.O.S): This initiative was created specifically for out of school girls especially those hawking...",
     date: "Oct 5, 2023",
     owner: "El-Neema",
     conversations: 0,
-    href: "/schorlarship-scheme",
+    href: "/pad-on-the-street",
   },
 ];
 

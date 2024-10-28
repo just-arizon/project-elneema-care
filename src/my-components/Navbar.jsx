@@ -47,6 +47,8 @@ const navBar = () => {
         { name: "Pad a Yarinya", link: "/pad-a-yarinya" },
         { name: "Widow Smile", link: "/widows-smile" },
         { name: "Pad Scholarship Scheme", link: "/schorlarship-scheme" },
+        { name: "Pad on the Street", link: "/pad-on-the-street" },
+        { name: "El Neema Cares period guide", link: "/guide-booklet" },
       ],
     },
     {

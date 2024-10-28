@@ -28,7 +28,7 @@ const initiatives = [
   { name: "Widows Smile at Christmas (W.S.C)" },
   { name: "Pad Scholarship Scheme (P.S.S)" },
   { name: "Pad on the Street (P.O.S)" },
-  { name: "El Neema Cares period guide" },
+  { name: "" },
 ];
 
 const AboutUs = () => {
@@ -62,7 +62,7 @@ const AboutUs = () => {
             <div className="w-12 h-1 mt-2 bg-orange-400 mb-3"></div>
           </div>
 
-          <p className="text-center lg:text-start lg:mb-10 pt- font-Manrope font-medium">
+          <p className="text-center lg:text-start lg:mb-2 pt- font-Manrope font-medium">
             El Neema cares initiative is on a mission to reduce period stigma
             and curb period poverty in Africa one girl child at a time through
             our 4 existing initiatives below.
@@ -70,7 +70,7 @@ const AboutUs = () => {
 
          
         </div>
-        <div className="w-full ">
+        {/* <div className="w-full ">
             <ul
             
               className="flex flex-col  gap-4"
@@ -82,9 +82,9 @@ const AboutUs = () => {
                   </Card>
                 </li>
               ))}
-            </ul>
-          </div>
-        <div className="my-5">
+            </ul> 
+          </div> */}
+        <div className="">
           <Link href="/blog">
           <Button to="" className="text-white bg-orange-400">Read More</Button>
           </Link>

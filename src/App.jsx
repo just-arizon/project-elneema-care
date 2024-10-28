@@ -14,6 +14,7 @@ import {
   Outlet,
 } from "react-router-dom";
 import { Spinner } from "@nextui-org/react";
+import GuideBooklet from "./pages/guideBooklet";
 
 
 function App() {
@@ -30,6 +31,7 @@ const Support = React.lazy(() => import('./pages/supportUs'));
 const Blog = React.lazy(() => import('./pages/blog'));  
 const Scholarship = React.lazy(() => import('./pages/padScholarship'));
 const WidowSmile = React.lazy(() => import('./pages/widowSmile'));
+const PadOnTheStreet = React.lazy(() => import('./pages/padOnStreet'));
 const Error = React.lazy(() => import('./pages/errorPage'));
 
 
@@ -136,6 +138,22 @@ const Root = () => {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <WidowSmile />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="/pad-on-the-street" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <PadOnTheStreet />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="/guide-booklet" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <GuideBooklet />
               </Suspense>
             } 
           />

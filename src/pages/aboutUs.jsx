@@ -102,24 +102,7 @@ const AboutUs = () => {
           <span className="text-3xl font-bold">El</span> Neema Cares initiative was founded in 2019 with the indigent girlchild in mind, our main goal is to end period poverty and stigma in Africa by providing sanitary products, education and empowerment to young girls age 8-18 through 5 initiatives,
 
         </p>
-        <p className="font-Inter leading-8 my-5">
-          <span className="text-3xl font-bold">O</span>ur story dates back to
-          1998 when our founder started her period due to her inability to
-          afford sanitary products. She resorted to using paper which left her
-          bruised and made her dread period.
-        </p>
-        <p className="font-Inter leading-8 my-5">
-          <span className="text-3xl font-bold">U</span>p until today this is the
-          story of millions of African girls out there as studies by the UK
-          Action Aid shows that 1 in 10 girls living in Africa miss school,
-          sport activities or work due to lack of sanitary products and they
-          resort use of unsanitary items such as rags, paper or even leaves
-          which leads to infection, bruises and severe reproductive and mental
-          health issues. No girlchild deserves to go through this and this is
-          why we care, this is why we pad our girlchild to enable them lead a
-          normal life and contribute to the society even when they are on their
-          period
-        </p>
+      
       </section>
 
       <section className="grid my-7">
