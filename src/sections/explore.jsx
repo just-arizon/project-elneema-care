@@ -104,7 +104,7 @@ const Explore = () => {
           }}
         />
         <div className="lg:py-44 p-10 flex lg:flex-row flex-col gap-10 justify-center items-center">
-          <div className="flex lg:flex-row md:flex-row flex-col lg:justify-between items-center gap-5 w-full">
+          <div className="flex lg:flex-row md:flex-row flex-col justify-between items-center gap-5 w-full">
             {items.map((item) => (
               <ul key={item.id} className="text-white text-center">
                 <li>

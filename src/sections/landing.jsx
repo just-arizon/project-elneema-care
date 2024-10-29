@@ -21,7 +21,7 @@ import "./styles.css";
 //
 // required parameter to fetch images
 const urlEndpoint = " https://ik.imagekit.io/vzma9sfet/";
-import { IKImage, IKVideo, IKContext, IKUpload } from "imagekitio-react";
+import {  IKVideo  } from "imagekitio-react";
 
 // import required modules
 import { Autoplay } from "swiper/modules";

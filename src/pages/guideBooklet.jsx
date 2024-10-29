@@ -10,6 +10,11 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb";
+  // required parameter to fetch images
+const urlEndpoint = " https://ik.imagekit.io/vzma9sfet/";
+import { IKImage } from "imagekitio-react";
+import { Button } from "@/components/ui/button";
+
 const GuideBooklet = () => {
   return (
     <div>
@@ -58,7 +63,26 @@ const GuideBooklet = () => {
       <div className="font-medium font-Manrope mx-5">
         <p className='py-5 leading-8'>We have a “not to be sold booklet” for adolescent girls teaching them how to better manage their flow. This booklet is distributed to young girls in rural communities and urban slums aged 8-18(both in and out of school) to enable them to understand proper and hygienic ways of managing their periods and care for their body pre and post cycle. We also engage in Community Awareness Campaigns to raise awareness on menstrual hygiene management (MHM) and reduce period stigma in communities. We engage and train our Volunteers to create more awareness in their various communities. You can click below to download the booklet and share with others
         </p>
-        <p className='py-5'></p>
+        <div className='py-5'>
+        <IKImage
+                urlEndpoint={urlEndpoint}
+                path="/El-neema-data/Neema Ebook.png"
+                
+              
+              />
+                 <a 
+            href={`${urlEndpoint}`} 
+            download="/MAIN NEEMA BOOKLET (945 x 665 px).pdf" // specify the filename you want for the download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex justify-center my-5">
+              <Button className="">
+                Download Booklet
+              </Button>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   )
