@@ -24,8 +24,17 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "../sections/styles.css";
+import {Link} from "@nextui-org/react"
 
 const galleryImages = [image1, image7, image3, AboutImg, image8, image6, image2];
+
+const initiatives = [
+  { name: "Pad a Yarinya (P.A.Y)" , href: "/pad-a-yarinya"},
+  { name: "Widows Smile at Christmas (W.S.C)" , href: "/widows-smile"},
+  { name: "Pad Scholarship Scheme (P.S.S)" , href: "/schorlarship-scheme"},
+  { name: "Pad on the Street (P.O.S)" , href: "/pad-on-the-street"},
+  { name: "El Neema Cares period guide",   href: "guide-booklet"},
+];
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -102,7 +111,20 @@ const AboutUs = () => {
           <span className="text-3xl font-bold">El</span> Neema Cares initiative was founded in 2019 with the indigent girlchild in mind, our main goal is to end period poverty and stigma in Africa by providing sanitary products, education and empowerment to young girls age 8-18 through 5 initiatives,
 
         </p>
-      
+              <div className="w-full ">
+                <ul
+            
+            className="flex flex-col  gap-4"
+          >
+            {initiatives.map((initiative, index) => (
+              <li key={index} className="">
+                <Link href={initiative.href} className="w-full bg-gray-200 py-2 px-4 font-semibold text-start shadow-md">
+                  {initiative.name}
+                </Link>
+              </li>
+            ))}
+          </ul> 
+        </div>
       </section>
 
       <section className="grid my-7">

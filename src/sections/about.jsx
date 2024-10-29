@@ -25,13 +25,7 @@ const textVariant = {
   }),
 };
 
-const initiatives = [
-  { name: "Pad a Yarinya (P.A.Y)" },
-  { name: "Widows Smile at Christmas (W.S.C)" },
-  { name: "Pad Scholarship Scheme (P.S.S)" },
-  { name: "Pad on the Street (P.O.S)" },
-  { name: "" },
-];
+
 
 const AboutUs = () => {
   return (
@@ -77,20 +71,7 @@ const AboutUs = () => {
         </div>
          
         </div>
-        {/* <div className="w-full ">
-            <ul
-            
-              className="flex flex-col  gap-4"
-            >
-              {initiatives.map((initiative, index) => (
-                <li key={index} className="">
-                  <Card className="w-full bg-gray-200 py-2 px-4 font-semibold text-start shadow-md">
-                    {initiative.name}
-                  </Card>
-                </li>
-              ))}
-            </ul> 
-          </div> */}
+
      
       </div>
 
