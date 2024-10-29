@@ -1,5 +1,7 @@
 import React from "react";
-import { Image, Button, Card, Link } from "@nextui-org/react";
+import { Image, Card, Link } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
+
 import Image1 from "../assets/about1.jpg";
 import Image2 from "../assets/about2.jpg";
 import { motion } from "framer-motion";
@@ -34,13 +36,9 @@ const initiatives = [
 const AboutUs = () => {
   return (
     <section className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:px-24 px-5 py-20 gap-5 ">
-      <div className="grid gap-5 bg- lg:w-10/12">
-        <div>
-          <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
-            Charity
-          </h1>
-        </div>
-        <div className="grid lg:gap-1 gap-8">
+      <div className="grid gap- bg- lg:w-10/12">
+       
+        <div className="grid lg:gap-1 gap-5">
 
           <motion.div
             initial="hidden"
@@ -49,6 +47,11 @@ const AboutUs = () => {
             transition={{ staggerChildren: 0.5 }}
             className="lg:w-full"
           >
+             <div>
+          <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
+            Charity
+          </h1>
+        </div>
             <motion.h2
               className="lg:text-4xl text-2xl font-semibold lg:text-start text-center font-Inter"
               variants={textVariant}
@@ -62,12 +65,16 @@ const AboutUs = () => {
             <div className="w-12 h-1 mt-2 bg-orange-400 mb-3"></div>
           </div>
 
-          <p className="text-center lg:text-start lg:mb-2 pt- font-Manrope font-medium">
+          <p className="text-center lg:text-start lg:mb-2 pt- font-Manrope font-medium leading-8">
             El Neema cares initiative is on a mission to reduce period stigma
             and curb period poverty in Africa one girl child at a time through
             our 4 existing initiatives below.
           </p>
-
+          <div className="flex lg:justify-start justify-center mt-7 lg:mt-0">
+          <Link href="/blog">
+          <Button to="" className="text-white ">Read More</Button>
+          </Link>
+        </div>
          
         </div>
         {/* <div className="w-full ">
@@ -84,11 +91,7 @@ const AboutUs = () => {
               ))}
             </ul> 
           </div> */}
-        <div className="">
-          <Link href="/blog">
-          <Button to="" className="text-white bg-orange-400">Read More</Button>
-          </Link>
-        </div>
+     
       </div>
 
       <div className="bg- grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">

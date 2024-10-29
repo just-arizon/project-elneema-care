@@ -157,11 +157,11 @@ const AboutUs = () => {
       {/* Modal for Image Preview */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-75 z-50 flex justify-center items-center"
+          className="fixed inset-0 bg-black bg-opacity-75 z-50 "
           onClick={closeModal}
         >
           <div
-            className="relative bg-transparent overflow-hidden"
+            className="relative bg-transparent overflow-hidden mt-"
             onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
           >
             {/* Swiper for Image Sliding */}
@@ -174,14 +174,14 @@ const AboutUs = () => {
               className="w-full lg:w-full h-full "
             >
               {galleryImages.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <Image src={image} alt={`Preview ${index}`} className="w-full h-full object-cover" />
+                <SwiperSlide key={index} className="flex justify-center items-center">
+                  <Image src={image} alt={`Preview ${index}`} className="w-full   rounded-none" />
                 </SwiperSlide>
               ))}
             </Swiper>
             {/* Close button */}
             <Button
-              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg"
+              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg z-50"
               onClick={closeModal}
             >
               ✕
