@@ -11,6 +11,9 @@ import Logo from "../assets/El-neema.svg";
 import sheetLogo from "../assets/favicon-32x32.png";
 import DonationBtn from "./donationbtn";
 import { TbMenuDeep } from "react-icons/tb";
+import {Snippet} from "@nextui-org/react";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure, Button} from "@nextui-org/react";
+
 import {
   Sheet,
   SheetContent,
@@ -37,7 +40,7 @@ import {
   import { FaFacebookF } from "react-icons/fa";
   import { PiInstagramLogoFill } from "react-icons/pi";
   import { IoLogoTiktok } from "react-icons/io5";
-  import { ToastProvider } from "@/components/ui/toast";
+
 
 const navBar = () => {
   const menuItems = [
@@ -82,8 +85,9 @@ const navBar = () => {
     { img: <PiInstagramLogoFill />, href: "https://www.instagram.com/elneema_cares?igsh=MWdiMDZ2MHRqYXljaA==" },
     { img: <IoLogoTiktok />, href: "https://www.tiktok.com/@elneema_cares?_t=8qHkgFBycGT&_r=1" },
   ];
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
-    <ToastProvider>
+
  <Navbar shouldHideOnScroll className=" w-full shadow-md font-Manrope px- lg:px- z-40 bg-white">
       <div className="w-full flex items-center justify-between py-4">
         <Link href="/">
@@ -130,7 +134,44 @@ const navBar = () => {
 
         {/* Donation Button */}
         <div className="hidden lg:block md:block">
-          <DonationBtn />
+        <Button
+              as={Link}
+              href={"#"}
+              className="bg-orange-500 text-white rounded-full font-bold px-8"
+              size="lg"
+              onPress={onOpen}
+            >
+              Donate
+            </Button>
+
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false} isKeyboardDismissDisabled={true}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Account Details</ModalHeader>
+              <ModalBody>
+                <p> 
+                 <span className="bold">Naira Account :</span>
+                 <span className=""> El-Neema cares initiative </span>
+                </p>
+                <Snippet variant="flat" color="warning"
+                hideCopyButton
+                >Guaranty Trust Bank</Snippet>
+                <Snippet> 0826233968</Snippet>
+                <p>
+                 <span className="bold">USD Account :</span>
+                 <span className=""> El-Neema cares initiative </span>
+                </p>
+                <Snippet> 0837099221</Snippet>
+
+              </ModalBody>
+              <ModalFooter>
+               Thanks for your Support
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
         </div>
 
         {/* Mobile Menu */}
@@ -201,7 +242,7 @@ const navBar = () => {
         </div>
       </div>
     </Navbar>
-    </ToastProvider>
+   
    
   );
 };

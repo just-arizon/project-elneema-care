@@ -7,6 +7,8 @@ import { IoMdClose } from "react-icons/io";
 import LandingImg1 from "../assets/landing[1].jpg";
 import LandingImg2 from "../assets/landing[2].jpg";
 import LandingImg3 from "../assets/landing[3].jpg";
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
+import {Snippet} from "@nextui-org/react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -39,6 +41,9 @@ const Landing = () => {
       },
     }),
   };
+
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
   return (
     <section className="bg-blue- relative">
       <div className="h-svh max-h-[550px] relative">
@@ -142,10 +147,39 @@ const Landing = () => {
               href={"#"}
               className="bg-orange-500 text-white rounded-full font-bold px-8"
               size="lg"
+              onPress={onOpen}
             >
               Donate
             </Button>
 
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false} isKeyboardDismissDisabled={true}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Account Details</ModalHeader>
+              <ModalBody>
+                <p> 
+                 <span className="bold">Naira Account :</span>
+                 <span className=""> El-Neema cares initiative </span>
+                </p>
+                <Snippet variant="flat" color="warning"
+                hideCopyButton
+                >Guaranty Trust Bank</Snippet>
+                <Snippet> 0826233968</Snippet>
+                <p>
+                 <span className="bold">USD Account :</span>
+                 <span className=""> El-Neema cares initiative </span>
+                </p>
+                <Snippet> 0837099221</Snippet>
+
+              </ModalBody>
+              <ModalFooter>
+               Thanks for your Support
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
             <div className="">
               <div
                 className="bg-white text-white rounded-full animate-pulseBorder border-transparent w-12 h-12 flex justify-center"
