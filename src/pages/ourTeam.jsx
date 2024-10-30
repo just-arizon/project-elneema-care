@@ -13,6 +13,7 @@ import {
   import memberImg3 from "../assets/Arizon2.jpg";
   import memberImg4 from "../assets/member[4].jpg";
   import memberImg5 from "../assets/member[5].jpg";
+  import memberImg6 from "../assets/member[6].jpg";
 
   import { motion } from "framer-motion";
 
@@ -77,6 +78,16 @@ import {
         img: memberImg5,
         name: "Abigail Medeoluje",
         role: "Volunteer Lead",
+        socials: {
+          twitter: "",
+          linkedin: "",
+        },
+      },
+      {
+        id: 6,
+        img: memberImg6,
+        name: "Odunayo Folorunsho",
+        role: "Administrative and procurement Lead",
         socials: {
           twitter: "",
           linkedin: "",
