@@ -6,7 +6,7 @@ import image1 from "../assets/P.S.S2.jpg";
 import image2 from "../assets/P.S.S1.jpg";
 import image3 from "../assets/P.S.S3.jpg";
 import image4 from "../assets/P.S.S7.jpg";
-import image5 from "../assets/P.S.S7.jpg";
+import image5 from "../assets/P.S.S8.jpg";
 import image6 from "../assets/P.S.S6.jpg";
 import image7 from "../assets/P.S.S4.jpg";
 import image8 from "../assets/P.S.S5.jpg";
@@ -19,8 +19,13 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb";
+  import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../sections/styles.css";
 
-  const galleryImages = [image1, image7, image3, image4, image8, image8, image6, image2];
+  const galleryImages = [image1, image7, image3, image4, image8, image5, image6, image2];
 const padScholarship = () => {
 
   const [isOpen, setIsOpen] = useState(false); // Modal state
