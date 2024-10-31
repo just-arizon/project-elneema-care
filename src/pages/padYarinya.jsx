@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from "react";
+
 import { motion } from "framer-motion";
 import padYarinyaImg from "../assets/padYarinyaImg.jpg";
 
+
+import image1 from "../assets/P.A.Y2.jpg";
+import image2 from "../assets/P.A.Y1.jpg";
+import image3 from "../assets/P.A.Y3.jpg";
+import image4 from "../assets/P.A.Y7.jpg";
+import image5 from "../assets/P.A.Y5.jpg";
+import image6 from "../assets/P.A.Y6.jpg";
+import image7 from "../assets/P.A.Y4.jpg";
+import image8 from "../assets/P.A.Y8.jpg";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -10,8 +20,31 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb";
+import { Image, Button } from "@nextui-org/react";
+
+
+  import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "../sections/styles.css";
+
+  const galleryImages = [ image5, image7,  image8, image1, image3, image4,  image6, image2];
+
 
 const padYarinya = () => {
+  const [isOpen, setIsOpen] = useState(false); // Modal state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track which image is opened
+
+  const openImagePreview = (index) => {
+    setCurrentImageIndex(index);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
          <motion.div className="relative">
@@ -61,6 +94,85 @@ const padYarinya = () => {
         </p>
         <p className='py-5'></p>
       </div>
+
+
+      <section className="">
+      <div className="grid lg:gap-1 gap-8 mb-16">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            transition={{ staggerChildren: 0.5 }} // Staggering the child elements
+            className="lg:w-full"
+          >
+            <motion.h2
+              className="lg:text-4xl text-2xl font-bold lg:text-center text-center font-Inter"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
+              Pad Yarinya Gallery
+            </motion.h2>
+          </motion.div>
+          <div className="flex lg:justify-center justify-center">
+            <div className="w-12 h-1 lg:mt-2 bg-orange-400"></div>
+          </div>
+        </div>
+
+        {/* Gallery grid */}
+        <div className="grid grid-cols-4 gap-4 p-4 lg:px-20">
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className={`cursor-pointer grid-cols-2`}
+              onClick={() => openImagePreview(index)}
+            >
+              <Image
+                src={image}
+                alt={`Gallery Image ${index + 1}`}
+                className=" "
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Modal for Image Preview */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 z-50 "
+          onClick={closeModal}
+        >
+          <div
+            className="relative bg-transparent overflow-hidden mt-"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+          >
+            {/* Swiper for Image Sliding */}
+            <Swiper
+              initialSlide={currentImageIndex}
+              navigation
+              pagination={{ clickable: true }}
+              spaceBetween={5}
+              slidesPerView={1}
+              className="w-full lg:w-full h-full "
+            >
+              {galleryImages.map((image, index) => (
+                <SwiperSlide key={index} className="flex justify-center items-center">
+                  <Image src={image} alt={`Preview ${index}`} className="w-full   rounded-none" />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            {/* Close button */}
+            <Button
+              className="absolute top-2 right-2 bg-white rounded-full p-2 shadow-lg z-50"
+              onClick={closeModal}
+            >
+              ✕
+            </Button>
+          </div>
+        </div>
+      )}
+      </section>
     </div>
   )
 }

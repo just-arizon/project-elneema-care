@@ -9,6 +9,7 @@ import LandingImg2 from "../assets/landing[2].jpg";
 import LandingImg3 from "../assets/landing[3].jpg";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 import {Snippet} from "@nextui-org/react";
+import { AiFillBank } from "react-icons/ai";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -162,15 +163,15 @@ const Landing = () => {
                  <span className="bold">Naira Account :</span>
                  <span className=""> El-Neema cares initiative </span>
                 </p>
-                <Snippet variant="flat" color="warning"
+                <Snippet symbol={<AiFillBank />} variant="flat" color="warning"
                 hideCopyButton
                 >Guaranty Trust Bank</Snippet>
-                <Snippet> 0826233968</Snippet>
+                <Snippet symbol="#"> 0826233968</Snippet>
                 <p>
                  <span className="bold">USD Account :</span>
                  <span className=""> El-Neema cares initiative </span>
                 </p>
-                <Snippet> 0837099221</Snippet>
+                <Snippet symbol="#"> 0837099221</Snippet>
 
               </ModalBody>
               <ModalFooter>

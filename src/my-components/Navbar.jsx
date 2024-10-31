@@ -40,7 +40,7 @@ import {
   import { FaFacebookF } from "react-icons/fa";
   import { PiInstagramLogoFill } from "react-icons/pi";
   import { IoLogoTiktok } from "react-icons/io5";
-
+  import { AiFillBank } from "react-icons/ai";
 
 const navBar = () => {
   const menuItems = [
@@ -154,15 +154,15 @@ const navBar = () => {
                  <span className="bold">Naira Account :</span>
                  <span className=""> El-Neema cares initiative </span>
                 </p>
-                <Snippet variant="flat" color="warning"
+                <Snippet symbol={<AiFillBank />} variant="flat" color="warning"
                 hideCopyButton
                 >Guaranty Trust Bank</Snippet>
-                <Snippet> 0826233968</Snippet>
+                <Snippet symbol="#"> 0826233968</Snippet>
                 <p>
                  <span className="bold">USD Account :</span>
                  <span className=""> El-Neema cares initiative </span>
                 </p>
-                <Snippet> 0837099221</Snippet>
+                <Snippet symbol="#"> 0837099221</Snippet>
 
               </ModalBody>
               <ModalFooter>
