@@ -92,7 +92,9 @@ const AboutUs = () => {
         </div>
 
         <div className="lg:w-full grid gap-5 relative">
-          <Image src={Image2} className="h-auto rounded-xl" />
+          <div className="flex pt-10">
+            <Image src={Image2} className="h-auto rounded-xl" />
+          </div>
 
           <div className="bg-orange-400 w-full h- rounded-xl grid p-10 lg:p-5 gap-4 text-white lg:hidden md:hidden block">
             <div className="flex items-center text-5xl">

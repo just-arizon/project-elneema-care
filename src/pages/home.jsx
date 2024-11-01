@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Landing from "../sections/landing";
 import Testimonials from "../sections/testimonials";
 import Explore from "../sections/explore";
-import About from "../sections/about";
+import About from "../sections/charity";
 import Framework from "../sections/framework";
 import Values from "../sections/values";
 import Volunteer from "../sections/volunteer";

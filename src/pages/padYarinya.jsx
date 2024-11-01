@@ -8,11 +8,7 @@ import image1 from "../assets/P.A.Y2.jpg";
 import image2 from "../assets/P.A.Y1.jpg";
 import image3 from "../assets/P.A.Y3.jpg";
 import image4 from "../assets/P.A.Y7.jpg";
-import image5 from "../assets/P.A.Y5.jpg";
 import image6 from "../assets/P.A.Y6.jpg";
-import image7 from "../assets/P.A.Y4.jpg";
-import image8 from "../assets/P.A.Y8.jpg";
-import image9 from "../assets/P.A.Y9.jpg";
 import image10 from "../assets/P.A.Y10.jpg";
 import image11 from "../assets/P.A.Y11.jpg";
 import image12 from "../assets/P.A.Y12.jpg";
@@ -41,7 +37,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../sections/styles.css";
 
-  const galleryImages = [ image5, image7,  image8, image9, image1, image3, image4,  image6, image2, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
+  const galleryImages = [ image1, image3, image4,  image6, image2, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
 
 
 const padYarinya = () => {

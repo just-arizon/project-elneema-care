@@ -56,7 +56,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="lg:my-28 my-16">
+    <div className="lg:my-28 my-16 mx-5">
       <div>
         <h1 className="text-lg text-orange-400 lg:text-center text-center mb-4 ">
           TESTIMONIALS

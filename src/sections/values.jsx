@@ -55,7 +55,7 @@ const values = () => {
       className="lg:w-full"
     >
       <motion.h2
-        className="lg:text-4xl text-3xl font-semibold lg:text-center text-center font-Inter"
+        className="lg:text-4xl text-2xl font-semibold lg:text-center text-center font-Inter"
         variants={textVariant}
         custom={0}
       >
@@ -72,7 +72,7 @@ const values = () => {
 
                     <CardHeader className='text-xl font-Inter font-semibold text-center flex gap-2 grid justify-center'>
                         <div className="flex justify-center">
-                          <span className="flex justify-center items-center bg- text-4xl bg-orange-300 w-20 h-20 rounded-full text-white">
+                          <span className="flex justify-center items-center bg- text-4xl bg-orange-400 w-20 h-20 rounded-full text-white">
                               {card.icon}
                           </span>
                         </div>           

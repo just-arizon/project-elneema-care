@@ -48,7 +48,7 @@ const volunteer = () => {
           <p className="text-center lg:text-center text-md mb-3 lg:px-12 lg:w-6/12">
             <p className="">We talked about Stakeholders galvanizing support to stop female students from using rags, tissue papers durngmenstral flow</p>
 
-           <p className="font-bold">It&apos;s a Must Read!!</p>
+           <p className="font-bold my-5">It&apos;s a Must Read!!</p>
           </p>
         </div>
       </div>
