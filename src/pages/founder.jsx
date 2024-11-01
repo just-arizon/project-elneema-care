@@ -116,7 +116,7 @@ const founder = () => {
           <p className="leading-8 my-2">
           I look forward to a society where menstrual hygiene kits would be available at no cost at all, for the school girls or at a very reduced price which they can afford in order to help them manage their monthly flow. We would continue to do our best and hope that soon more individuals and other cooperate bodies, including the Government would join us in the fight against period poverty and end period stigmatization. Change is possible with targeted policies and investments. Cheers to seeing every girl child manage her menstruation with dignity, safety and confidence.
           </p>
-          <p className=" my-2">
+          <p className=" my-2 leading-8">
           I am grateful to God for how far we have come and to all those who have been a part of this mission, vision, supporting and urging us on.
           </p>
         </Card>

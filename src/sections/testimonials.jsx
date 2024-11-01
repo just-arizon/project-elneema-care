@@ -20,29 +20,42 @@ const Testimonials = () => {
 
   const supporters = [
     {
-      avatar: 'https://images.unsplash.com/broken',
+      avatar: "https://images.unsplash.com/broken",
       name: "Magdalene Azurunwa",
       // occupation: "Medical Doctor",
-      feedback:
-        `I am glad to support the initiative because I know how discomforting it can be to use anything other that a sanitary pad or any sanitary hygiene kits. I'll keep doing my bit and hope that soon, we will get more people to join in advocating for these young school age girls.`,
+      feedback: `I am glad to support the initiative because I know how discomforting it can be to use anything other that a sanitary pad or any sanitary hygiene kits. I'll keep doing my bit and hope that soon, we will get more people to join in advocating for these young school age girls.`,
     },
     {
-      avatar: 'https://images.unsplash.com/broken',
+      avatar: "https://images.unsplash.com/broken",
       name: "Onyinyechukwu  Nwokwu",
       // occupation: "Nurse",
-      feedback:
-        `ElNeema Cares Initiative opened my eyes to the fact that period poverty was a thing, especially in certain parts of Nigeria. Listening to the burden behind the initiative spurred me to contribute towards easing this burden. A truly remarkable and thoughtful endeavour it is!
+      feedback: `ElNeema Cares Initiative opened my eyes to the fact that period poverty was a thing, especially in certain parts of Nigeria. Listening to the burden behind the initiative spurred me to contribute towards easing this burden. A truly remarkable and thoughtful endeavour it is!
 `,
     },
     {
-      avatar: 'https://images.unsplash.com/broken',
+      avatar: "https://images.unsplash.com/broken",
       name: "Clement Illiambe",
       // occupation: "Social Worker",
-      feedback:
-        `I choose to support ElNeema Cares because your initiative addresses a critical need that often goes unspoken. Your tireless efforts to provide menstrual products and education to those in need resonate deeply with me.
+      feedback: `I choose to support ElNeema Cares because your initiative addresses a critical need that often goes unspoken. Your tireless efforts to provide menstrual products and education to those in need resonate deeply with me.
 `,
     },
   ];
+
+  const cardVariants = {
+    offscreen: {
+      opacity: 0, // Make it invisible initially
+      y: 0, // Keep it in its position
+    },
+    onscreen: {
+      opacity: 1,
+      y: -18,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
 
   const [loading, setLoading] = useState(true);
 
@@ -84,56 +97,69 @@ const Testimonials = () => {
 
         <div className="w-full flex justify-center lg:py-8 py-5 px-5">
           <p className="text-center lg:text-center text-md mb-8 lg:px-12 lg:w-6/12">
-            We caught up with a few of our supporters, and they had this to share with us!
+            We caught up with a few of our supporters, and they had this to
+            share with us!
           </p>
         </div>
       </div>
 
       <div className="flex justify-center gap-10 flex-wrap">
         {supporters.map((supporter, index) => (
-          <Card
+          <motion.div
             key={index}
-            className="w-full max-w-[300px] space-y-5 p-8"
-            radius="lg"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+            variants={cardVariants}
           >
-            {loading ? (
-              <>
-                <div className="flex gap-5">
-                  <div>
-                      <Skeleton className="rounded-full h-16 w-16" /> 
-                  </div>{/* Avatar Skeleton */}
-                  <div className="space-y-1 w-full">
-                    <Skeleton className="h-5 w-full rounded-lg" /> {/* Name Skeleton */}
-                    <Skeleton className="h-4 w-3/4 rounded-lg" /> {/* Occupation Skeleton */}
+            <Card className="w-full max-w-[400px] min-h-[350px] space-y-5 p-8" radius="lg">
+              {loading ? (
+                <>
+                  <div className="flex gap-5">
+                    <div>
+                      <Skeleton className="rounded-full h-16 w-16" />
+                    </div>
+                    {/* Avatar Skeleton */}
+                    <div className="space-y-1 w-full">
+                      <Skeleton className="h-5 w-full rounded-lg" />{" "}
+                      {/* Name Skeleton */}
+                      <Skeleton className="h-4 w-3/4 rounded-lg" />{" "}
+                      {/* Occupation Skeleton */}
+                    </div>
                   </div>
-                </div>
-                <Skeleton className="h-16 w-full rounded-lg" /> {/* Feedback Skeleton */}
-              </>
-            ) : (
-              <>
-                <div className="flex gap-2">
-                  <div className="">
+                  <Skeleton className="h-16 w-full rounded-lg" />{" "}
+                  {/* Feedback Skeleton */}
+                </>
+              ) : (
+                <>
+                  <div className="flex gap-2">
+                    <div className="">
                       <Avatar
                         src={supporter.avatar}
                         alt={supporter.name}
                         size="lg"
-                        showFallback 
+                        showFallback
                       />
-                  </div>
-                  <div className="space-y-1 w-full">
-                    <h3 className="text-lg font-bold flex items-center justify-between">
-                      {supporter.name}
+                    </div>
+                    <div className="space-y-1 w-full flex">
+                      <h3 className="text-lg font-bold flex items-center justify-between pr-8">
+                        {supporter.name}
+                      </h3>
+                      <span className="">
                       <ImQuotesLeft className="text-3xl" />
-                    </h3>
-                    <p className="text-sm text-orange-400">{supporter.occupation}</p>
+                      </span>
+                      <p className="text-sm text-orange-400">
+                        {supporter.occupation}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <p className="text-sm leading-7">{supporter.feedback}</p>
-                </div>
-              </>
-            )}
-          </Card>
+                  <div>
+                    <p className="text-sm leading-7">{supporter.feedback}</p>
+                  </div>
+                </>
+              )}
+            </Card>
+          </motion.div>
         ))}
       </div>
     </div>

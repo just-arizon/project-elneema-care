@@ -100,7 +100,7 @@ const widowSmile = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              Pad On The Street Gallery
+              Widow,s Smile At Christmas Gallery
             </motion.h2>
           </motion.div>
           <div className="flex lg:justify-center justify-center">

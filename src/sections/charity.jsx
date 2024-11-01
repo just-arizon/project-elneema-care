@@ -25,15 +25,11 @@ const textVariant = {
   }),
 };
 
-
-
 const AboutUs = () => {
   return (
     <section className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 lg:px-24 px-5 py-20 gap-5 ">
       <div className="grid gap- bg- lg:w-10/12">
-       
-        <div className="grid lg:gap-1 gap-5">
-
+        <div className="grid lg:gap-1 gap-">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -41,11 +37,11 @@ const AboutUs = () => {
             transition={{ staggerChildren: 0.5 }}
             className="lg:w-full"
           >
-             <div>
-          <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
-            Charity
-          </h1>
-        </div>
+            <div>
+              <h1 className="text-lg text-orange-400 lg:text-start text-center mb-4">
+                Charity
+              </h1>
+            </div>
             <motion.h2
               className="lg:text-4xl text-2xl font-semibold lg:text-start text-center font-Inter"
               variants={textVariant}
@@ -53,26 +49,29 @@ const AboutUs = () => {
             >
               We have impacted 8500 girls across 11 states in Nigeria
             </motion.h2>
-          </motion.div>
-
+            
           <div className="flex lg:justify-start justify-center">
-            <div className="w-12 h-1 mt-2 bg-orange-400 mb-3"></div>
+            <div className="w-12 h-1 mt-8 bg-orange-400 mb-3"></div>
           </div>
 
-          <p className="text-center lg:text-start lg:mb-2 pt- font-Manrope font-medium leading-8">
+
+          <p className="text-center lg:text-start lg:mb-2 pt- font-Manrope font-medium leading-8 my-5">
             El Neema cares initiative is on a mission to reduce period stigma
             and curb period poverty in Africa one girl child at a time through
             our 4 existing initiatives below.
           </p>
-          <div className="flex lg:justify-start justify-center mt-7 lg:mt-0">
-          <Link href="/blog">
-          <Button to="" className="text-white ">Read More</Button>
-          </Link>
-        </div>
-         
-        </div>
 
-     
+
+          <div className="flex lg:justify-start justify-center mt-7 lg:mt-5">
+            <Link href="/blog">
+              <Button to="" className="text-white ">
+                Read More
+              </Button>
+            </Link>
+          </div>
+          </motion.div>
+
+        </div>
       </div>
 
       <div className="bg- grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">

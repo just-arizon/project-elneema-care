@@ -86,7 +86,7 @@ const Explore = () => {
         </div>
 
         <div className="w-full flex justify-center lg:py-10 px-5">
-          <p className="text-center lg:text-center text-md mb-8 lg:px-12 lg:w-6/12">
+          <p className="text-center lg:text-center text-md mb-10 lg:px-12 lg:w-6/12">
             We envision a world where no is held back from school or opportunities by period, where menstruation is met with dignity and period poverty is totally eliminated.
           </p>
         </div>

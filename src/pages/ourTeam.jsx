@@ -87,7 +87,7 @@ import {
         id: 6,
         img: memberImg6,
         name: "Odunayo Folorunsho",
-        role: "Administrative and procurement Lead",
+        role: "Administrative and Procurement Lead",
         socials: {
           twitter: "",
           linkedin: "",
