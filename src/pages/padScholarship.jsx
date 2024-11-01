@@ -10,6 +10,10 @@ import image5 from "../assets/P.S.S8.jpg";
 import image6 from "../assets/P.S.S6.jpg";
 import image7 from "../assets/P.S.S4.jpg";
 import image8 from "../assets/P.S.S5.jpg";
+import image9 from "../assets/P.S.S9.jpg";
+import image10 from "../assets/P.S.S10.jpg";
+import image11 from "../assets/P.S.S11.jpg";
+import image12 from "../assets/P.S.S12.jpg";
 import { Image, Button } from "@nextui-org/react";
 import {
     Breadcrumb,
@@ -25,7 +29,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../sections/styles.css";
 
-  const galleryImages = [image1, image7, image3, image4, image8, image5, image6, image2];
+  const galleryImages = [image1, image7, image3, image4, image8, image5, image6, image2, image9, image10, image11, image12];
 const padScholarship = () => {
 
   const [isOpen, setIsOpen] = useState(false); // Modal state

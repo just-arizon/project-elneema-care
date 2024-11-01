@@ -21,7 +21,7 @@ const volunteer = () => {
     
       <div>
         <h1 className="text-lg text-orange-400 lg:text-center text-center mb-4 ">
-          Volunteers
+          Online Blog
         </h1>
       </div>
       <div className="grid lg:gap-1 gap-3">
@@ -46,14 +46,15 @@ const volunteer = () => {
 
         <div className="w-full flex justify-center lg:py-8 py-5 px-5">
           <p className="text-center lg:text-center text-md mb-3 lg:px-12 lg:w-6/12">
-            We caught up with a few of our supporters, and they had this to
-            share with us!
+            <p className="">We talked about Stakeholders galvanizing support to stop female students from using rags, tissue papers durngmenstral flow</p>
+
+           <p className="font-bold">It&apos;s a Must Read!!</p>
           </p>
         </div>
       </div>
       <div className="flex justify-center">
       <Button asChild>
-  <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfRR6UwEJ89KyRzlqHmaEHD7xNgjwug8aGNBCryQwkdSgEqNA/viewform">Become a volunteer</Link>
+  <Link href="https://thewhistler.ng/stakeholders-galvanize-support-to-stop-female-students-from-using-rags-tissue-papers-during-menstrual-flow/ ">Read More</Link>
 </Button>
       </div>
     </div>

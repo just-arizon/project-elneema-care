@@ -12,6 +12,18 @@ import image5 from "../assets/P.A.Y5.jpg";
 import image6 from "../assets/P.A.Y6.jpg";
 import image7 from "../assets/P.A.Y4.jpg";
 import image8 from "../assets/P.A.Y8.jpg";
+import image9 from "../assets/P.A.Y9.jpg";
+import image10 from "../assets/P.A.Y10.jpg";
+import image11 from "../assets/P.A.Y11.jpg";
+import image12 from "../assets/P.A.Y12.jpg";
+import image13 from "../assets/P.A.Y13.jpg";
+import image14 from "../assets/P.A.Y14.jpg";
+import image15 from "../assets/P.A.Y15.jpg";
+import image16 from "../assets/P.A.Y16.jpg";
+import image17 from "../assets/P.A.Y17.jpg";
+import image18 from "../assets/P.A.Y18.jpg";
+import image19 from "../assets/P.A.Y19.jpg";
+import image20 from "../assets/P.A.Y20.jpg";
 import {
     Breadcrumb,
     BreadcrumbItem,
@@ -29,7 +41,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../sections/styles.css";
 
-  const galleryImages = [ image5, image7,  image8, image1, image3, image4,  image6, image2];
+  const galleryImages = [ image5, image7,  image8, image9, image1, image3, image4,  image6, image2, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20];
 
 
 const padYarinya = () => {

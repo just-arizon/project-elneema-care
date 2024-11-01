@@ -6,10 +6,13 @@ import image1 from "../assets/P.O.S2.jpg";
 import image2 from "../assets/P.O.S1.jpg";
 import image3 from "../assets/P.O.S3.jpg";
 import image4 from "../assets/P.O.S7.jpg";
-import image5 from "../assets/GalleryImg-5.jpg";
+import image9 from "../assets/P.O.S8.jpg";
 import image6 from "../assets/P.O.S6.jpg";
 import image7 from "../assets/P.O.S4.jpg";
 import image8 from "../assets/P.O.S5.jpg";
+import image10 from "../assets/P.O.S9.jpg";
+import image11 from "../assets/P.O.S10.jpg";
+import image12 from "../assets/P.O.S11.jpg";
 import { Image, Button } from "@nextui-org/react";
 import {
     Breadcrumb,
@@ -25,7 +28,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../sections/styles.css";
 
-  const galleryImages = [image1, image7, image3, image4, image8, image6, image2];
+  const galleryImages = [image1, image7, image3, image4, image9, image10, image8, image10, image11, image6, image2];
 
 const PadOnStreet = () => {
   const [isOpen, setIsOpen] = useState(false); // Modal state

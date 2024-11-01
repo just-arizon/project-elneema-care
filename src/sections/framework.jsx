@@ -41,7 +41,7 @@ const framework = () => {
           className="lg:w-full"
         >
           <motion.h2
-            className="lg:text-4xl text-2xl font-semibold lg:text-center text-center font-Inter"
+            className="lg:text-4xl text-3xl font-semibold lg:text-center text-center font-Inter"
             variants={textVariant}
             custom={0}
           >
@@ -58,7 +58,7 @@ const framework = () => {
             {cards.map((card, index) => (
                 <Card className="lg:p-10 px-5 py-10" key={index}>
 
-                    <CardHeader className='text-2xl font-Inter font-semibold text-center flex gap-2'>
+                    <CardHeader className='text-xl font-Inter font-semibold text-center flex gap-2'>
                         <span className="">
                             {card.icon}
                         </span>
