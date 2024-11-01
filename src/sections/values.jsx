@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import { GiStigmata } from "react-icons/gi";
+import { FaDraftingCompass } from "react-icons/fa";
 import { RiLightbulbFlashFill } from "react-icons/ri";
 import { TiGroup } from "react-icons/ti";
-import { ImPower } from "react-icons/im";
+import { RiShieldFlashFill } from "react-icons/ri";
 import { CgPathExclude } from "react-icons/cg";
 import { Card, CardHeader, CardBody} from "@nextui-org/react"
 const values = () => {
@@ -23,7 +23,7 @@ const values = () => {
 
       const cards = [
         {
-        icon: <GiStigmata />,
+        icon: <FaDraftingCompass />,
         title: "Advocacy",
          body:" We actively work to challenge societal norms, policies, and practices that perpetuate period poverty and menstrual stigma"
         },
@@ -38,7 +38,7 @@ const values = () => {
          body:"We approach our mission with empathy and care, understanding the challenges individuals face and providing support with respect and kindness."
         },
         {
-        icon:<ImPower />,    
+        icon:<RiShieldFlashFill />,    
         title: "Empowerment",
          body:"We believe in empowering individuals especially women and girls through education and awareness, giving them the tools to manage their menstrual health confidently and enable them make informed choices about their health and well-being."
         },
@@ -55,7 +55,7 @@ const values = () => {
       className="lg:w-full"
     >
       <motion.h2
-        className="lg:text-4xl text-2xl font-semibold lg:text-center text-center font-Inter"
+        className="lg:text-4xl text-3xl font-semibold lg:text-center text-center font-Inter"
         variants={textVariant}
         custom={0}
       >
@@ -70,10 +70,12 @@ const values = () => {
             {cards.map((card, index) => (
                 <Card className="lg:p-10 px-5 py-10" key={index}>
 
-                    <CardHeader className='text-2xl font-Inter font-semibold text-center flex gap-2 grid justify-center'>
-                        <span className="flex justify-center bg- text-4xl">
-                            {card.icon}
-                        </span>             
+                    <CardHeader className='text-xl font-Inter font-semibold text-center flex gap-2 grid justify-center'>
+                        <div className="flex justify-center">
+                          <span className="flex justify-center items-center bg- text-4xl bg-orange-300 w-20 h-20 rounded-full text-white">
+                              {card.icon}
+                          </span>
+                        </div>           
                         <span className="">
                             {card.title}
                         </span>             
