@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import Landing from "../assets/landing[2].jpg";
-import { Button, Link, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Button, Link} from "@nextui-org/react";
 import { FaPlay } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
