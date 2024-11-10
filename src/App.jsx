@@ -13,7 +13,7 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import { Spinner } from "@nextui-org/react";
+import { Spinner } from "./my-components/spinner";
 import GuideBooklet from "./pages/guideBooklet";
 
 
@@ -38,7 +38,7 @@ const Error = React.lazy(() => import('./pages/errorPage'));
 // Loading Spinner Component
 const LoadingSpinner = () => (
   <div className="flex justify-center items-center h-64 w-full">
-     <Spinner size="lg" color="warning"/>
+     <Spinner/>
   </div>
 );
 

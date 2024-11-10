@@ -110,9 +110,7 @@ const Team = () => {
         >
           <div className="lg:w-2/3 text-center px-5">
             <p className="leading-6 font-Inter text-sm">
-              Our dedicated team at El-neema combines expertise and passion
-              to create a safe and empowering environment for mental health
-              support.
+            Our dedicated team at El-Neema cares initiative combines expertise, passion and an understanding of our Vision to create targeted interventions to end period poverty and stigma, create awareness and support girlchild education
             </p>
           </div>
         </motion.div>
