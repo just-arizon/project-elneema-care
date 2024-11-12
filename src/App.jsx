@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import { Spinner } from "./my-components/spinner";
 import GuideBooklet from "./pages/guideBooklet";
+import MagazineBooklet from "./pages/neemaMagazine";
 
 
 function App() {
@@ -154,6 +155,14 @@ const Root = () => {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <GuideBooklet />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="/magazine-booklet" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <MagazineBooklet />
               </Suspense>
             } 
           />
