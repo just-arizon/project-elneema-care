@@ -65,9 +65,9 @@ const Magazine = () => {
       </div>
 
       <div className=" font-medium font-Manrope mx-5">
-      <p className='py-5 leading-8 lg:text-center'>
+      <p className='py-5 leading-8 text-center'>
       Let’s discuss period and how we can empower the girl child.
-Featuring period stories
+Featuring period stories,
 A publication of El Neema cares initiative
       </p>
       

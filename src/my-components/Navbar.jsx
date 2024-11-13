@@ -68,17 +68,17 @@ const navBar = () => {
     { name: "Support Us", link: "/support" },
   ];
 
-  const contacts = [
-    {name: "elneemacaresinitiative@gmail.com",
-      icon: <MdOutlineMailOutline />,
-    },
-    {name: "Line 3, Police Estate Karsana, Abuja",
-      icon: <IoLocationSharp />,
-    },
-    {name: "+234 813 628 0417 | +234 813 628 0417",
-      icon: <FaPhoneFlip />,
-    }
-  ];
+  // const contacts = [
+  //   {name: "elneemacaresinitiative@gmail.com",
+  //     icon: <MdOutlineMailOutline />,
+  //   },
+  //   {name: "Line 3, Police Estate Karsana, Abuja",
+  //     icon: <IoLocationSharp />,
+  //   },
+  //   {name: "+234 813 628 0417 | +234 813 628 0417",
+  //     icon: <FaPhoneFlip />,
+  //   }
+  // ];
 
   const NavbarIcons = [
     { img: <FaLinkedinIn />, href: "https://www.linkedin.com/company/el-neema-cares-initiative/" },
@@ -212,7 +212,7 @@ const navBar = () => {
                       )}
                     </Accordion>
                   ))}
-                  <div className="my-5">
+                  {/* <div className="my-5">
                     {contacts.map((contact, index) => (
                    <ul className="flex flex-start gap-5" key={index}>
                    <li className="flex my-2 gap-1">
@@ -222,7 +222,7 @@ const navBar = () => {
                    </ul>
                     ))}
 
-                    </div>
+                    </div> */}
                     <div className="footer-social flex items-center pt-5">
             {NavbarIcons.map((item, index) => (
               <a

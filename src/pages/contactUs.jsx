@@ -59,9 +59,9 @@ const contactUs = () => {
         </Breadcrumb>
       </div>
 
-      <section className="grid grid-cols-2 my-5 mx-5">
+      <section className="grid lg:grid-cols-2 my-5 mx-5 gap-3">
         <div className="">
-          <Card className="grid grid-cols-2">
+          <Card className="grid lg:grid-cols-2">
             <div className="p-5  grid gap-5 ">
               <p className="flex gap-1">
                 <div className="flex items-center">
@@ -85,7 +85,7 @@ const contactUs = () => {
 
             <div className="flex gap-5 justify-between ">
               <small className="flex gap-1">
-                <div className="flex items-center px-5">
+                <div className="flex items-center px-5 py-5 l">
                   <Link
                     href="https://www.facebook.com/share/p42aqYin7Tx1Yaxg/?mibextid=LQQJ4d"
                     className="text-black bg-white"
@@ -133,7 +133,11 @@ const contactUs = () => {
         </div>
 
 
-        <div></div>
+        <div className="">
+          <Card className="text-center py-10">
+            Map Section...
+          </Card>
+        </div>
       </section>
     </motion.div>
   );
