@@ -65,7 +65,7 @@ const GuideBooklet = () => {
       </div>
 
       <div className="font-medium font-Manrope mx-5">
-      <p className='py-5 leading-8'>We have a “not to be sold booklet” for adolescent girls teaching them how to better manage their flow. This booklet is distributed to young girls in rural communities and urban slums aged 8-18(both in and out of school) to enable them to understand proper and hygienic ways of managing their periods and care for their body pre and post cycle. We also engage in Community Awareness Campaigns to raise awareness on menstrual hygiene management (MHM) and reduce period stigma in communities. We engage and train our Volunteers to create more awareness in their various communities. You can click below to download the booklet and share with others
+      <p className='py-5 leading-8 text-center'>We have a “not to be sold booklet” for adolescent girls teaching them how to better manage their flow. This booklet is distributed to young girls in rural communities and urban slums aged 8-18(both in and out of school) to enable them to understand proper and hygienic ways of managing their periods and care for their body pre and post cycle. We also engage in Community Awareness Campaigns to raise awareness on menstrual hygiene management (MHM) and reduce period stigma in communities. We engage and train our Volunteers to create more awareness in their various communities. You can click below to download the booklet and share with others
       </p>
       
       <div className='py-5 relative'>

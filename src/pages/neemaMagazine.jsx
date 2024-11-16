@@ -73,12 +73,12 @@ A publication of El Neema cares initiative
       
       <div className='py-5 relative'>
           <div className="flex justify-center">
-            {/* <IKImage
+            <IKImage
              urlEndpoint={urlEndpoint}
-             path="/El-neema-data/Neema Ebook.png"
+             path="/El-neema-data/Neema Magazine.png"
             width="400"
             height="400"
-             /> */}
+             />
              <Card className="">
 
              </Card>
