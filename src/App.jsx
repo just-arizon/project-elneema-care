@@ -16,6 +16,7 @@ import {
 import { Spinner } from "./my-components/spinner";
 import GuideBooklet from "./pages/guideBooklet";
 import MagazineBooklet from "./pages/neemaMagazine";
+import Gallery from "./pages/gallery";
 
 
 function App() {
@@ -151,7 +152,7 @@ const Root = () => {
             } 
           />
          <Route 
-            path="/guide-booklet" 
+            path="/guide-booklets" 
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <GuideBooklet />
@@ -163,6 +164,14 @@ const Root = () => {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <MagazineBooklet />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="/gallery" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <Gallery />
               </Suspense>
             } 
           />
