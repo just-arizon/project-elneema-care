@@ -3,33 +3,24 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import BlogImg from "../assets/BlogImg.jpg";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { IKImage } from "imagekitio-react";
-import { Button } from "@/components/ui/button";
-import image9 from "../assets/P.A.Y9.jpg";
-import image5 from "../assets/P.A.Y5.jpg";
-import image7 from "../assets/P.A.Y4.jpg";
-import image8 from "../assets/P.A.Y8.jpg";
+import image1 from "../assets/French.jpg";
+import image2 from "../assets/Hausa.jpg";
+import image3 from "../assets/Igbo.jpg";
+import image4 from "../assets/Yoruba.jpg";
+import image5 from "../assets/English.jpg";
+import image6 from "../assets/Neema Magazine.png";
 import { Image } from "@nextui-org/react";
 
+import { Button } from "@/components/ui/button";
 
-
-const galleryImages = [ image5, image7,  image8, image9];
 // ImageKit URL endpoint
 const urlEndpoint = "https://ik.imagekit.io/vzma9sfet";
-const pdfPath = "/El-neema-data/MAIN%20NEEMA%20BOOKLET_compressed.pdf?updatedAt=1730291543290"; // Update to the correct PDF path
+const pdfPath = "/El-neema-data/My%20Flow%20and%20I%20-%20A%20Publication%20of%20El%20Neema%20Cares%20Initiative.pdf?updatedAt=1731454876972"; // Update to the correct PDF path
+
+
 
 const GuideBooklet = () => {
-  const [isOpen, setIsOpen] = useState(false); // Modal state
-  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track which image is opened
 
-  const openImagePreview = (index) => {
-    setCurrentImageIndex(index);
-    setIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsOpen(false);
-  };
   return (
     <div>
       <motion.div className="relative">
@@ -67,36 +58,130 @@ const GuideBooklet = () => {
       <div className="font-medium font-Manrope mx-5">
       <p className='py-5 leading-8 text-center'>We have a “not to be sold booklet” for adolescent girls teaching them how to better manage their flow. This booklet is distributed to young girls in rural communities and urban slums aged 8-18(both in and out of school) to enable them to understand proper and hygienic ways of managing their periods and care for their body pre and post cycle. We also engage in Community Awareness Campaigns to raise awareness on menstrual hygiene management (MHM) and reduce period stigma in communities. We engage and train our Volunteers to create more awareness in their various communities. You can click below to download the booklet and share with others
       </p>
-      
-      <div className='py-5 relative'>
-          <div className="flex justify-center">
-            <IKImage
-             urlEndpoint={urlEndpoint}
-             path="/El-neema-data/Neema Ebook.png"
-            width="400"
-            height="400"
-             />
-          </div>
           
-              
-              <div className="absolute w-full bottom-10 ">
-            <a
-              href={`${urlEndpoint}${pdfPath}`}
-              download="MAIN_NEEMA_BOOKLET.pdf" // Custom filename for download
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="flex justify-center my-">
-                <Button className="">
-                  Download Booklet
-                </Button>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
 
-
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5">
+                <div className="py-5 relative">
+                 <div className="flex justify-center gap-2">
+                   <div className="">
+                     <p className="text-center">English</p>
+                     <Image src={image5} width="250" height="auto" />
+                   </div>
+                 </div>
+                 <div className=" w-full py-2">
+                   <a
+                      href="../assets/Neema's Menstual Booklet - English.pdf"
+                     download="Neema's Menstual Booklet - English.pdf" // Custom filename for download
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <div className="flex justify-center my-">
+                       <Button className="">Download Booklet</Button>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+                <div className="py-5 relative">
+                 <div className="flex justify-center gap-2">
+                   <div className="">
+                     <p className="text-center">French</p>
+                     <Image src={image1} width="250" height="auto" />
+                   </div>
+                 </div>
+                 <div className=" w-full py-2">
+                   <a
+                     href="../assets/Neema's Menstual Booklet - French.pdf"
+                     download="Neema's Menstual Booklet - French.pdf" // Custom filename for download
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <div className="flex justify-center my-">
+                       <Button className="">Download Booklet</Button>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+                <div className="py-5 relative ">
+                 <div className="flex justify-center gap-2">
+                   <div className="">
+                     <p className="text-center">Igbo</p>
+                     <Image src={image3} width="250" height="auto" />
+                   </div>
+                 </div>
+                 <div className=" w-full py-2">
+                   <a
+                      href="../assets/NEEMA'S MENSTRUAL BOOKLET - IGBO.pdf"
+                     download="Neema's Menstual Booklet - Igbo.pdf" // Custom filename for download
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <div className="flex justify-center my-">
+                       <Button className="">Download Booklet</Button>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+                <div className="py-5 relative">
+                 <div className="flex justify-center gap-2">
+                   <div className="">
+                     <p className="text-center">Yoruba</p>
+                     <Image src={image4} width="250" height="auto" />
+                   </div>
+                 </div>
+                 <div className=" w-full py-2">
+                   <a
+                     href="../assets/Neema's Menstual Booklet - Yoruba.pdf"
+                     download="Neema's Menstual Booklet - Yoruba.pdf" // Custom filename for download
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <div className="flex justify-center my-">
+                       <Button className="">Download Booklet</Button>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+               <div className="py-5 relative">
+                 <div className="flex justify-center gap-2">
+                   <div className="">
+                     <p className="text-center">Hausa  </p>
+                     <Image src={image2} width="250" height="auto" />
+                   </div>
+                 </div>
+                 <div className=" w-full py-2">
+                   <a
+                     href="../assets/Neema's Menstual Booklet - Hausa.pdf"
+                     download="Neema's Menstual Booklet - Hausa.pdf" // Custom filename for download
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                     <div className="flex justify-center my-">
+                       <Button className="">Download Booklet</Button>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+             </div>
+             <div className="py-5 px-10">
+               <div className="flex lg:justify-start justify-center">
+                 <div className="">
+                   <Image src={image6} width="250" height="auto" />
+                   <div className="flex justify-center">
+                     <a
+                       href={`${urlEndpoint}${pdfPath}`}
+                       download="MAIN_NEEMA_BOOKLET.pdf" // Custom filename for download
+                       target="_blank"
+                       rel="noopener noreferrer"
+                     >
+                       <div className=" ">
+                         <Button className="">Download Booklet</Button>
+                       </div>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+             </div>
 
     </div>
   )
