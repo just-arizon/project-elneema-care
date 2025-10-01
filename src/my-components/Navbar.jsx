@@ -51,7 +51,7 @@ const navBar = () => {
         { name: "Widow Smile", link: "/widows-smile" },
         { name: "Pad Scholarship Scheme", link: "/schorlarship-scheme" },
         { name: "Pad on the Street", link: "/pad-on-the-street" },
-        { name: "El Neema Cares Period Guide", link: "/guide-booklet" },
+        { name: "El Neema Cares Period Guide", link: "/guide-booklets" },
         { name: "El Neema Cares Period Magazine", link: "/magazine-booklet" },
       ],
     },

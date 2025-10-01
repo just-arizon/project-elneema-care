@@ -163,25 +163,7 @@ const GuideBooklet = () => {
                  </div>
                </div>
              </div>
-             <div className="py-5 px-10">
-               <div className="flex lg:justify-start justify-center">
-                 <div className="">
-                   <Image src={image6} width="250" height="auto" />
-                   <div className="flex justify-center">
-                     <a
-                       href={`${urlEndpoint}${pdfPath}`}
-                       download="MAIN_NEEMA_BOOKLET.pdf" // Custom filename for download
-                       target="_blank"
-                       rel="noopener noreferrer"
-                     >
-                       <div className=" ">
-                         <Button className="">Download Booklet</Button>
-                       </div>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-             </div>
+
 
     </div>
   )
